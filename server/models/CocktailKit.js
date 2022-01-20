@@ -10,7 +10,7 @@ const cocktailKitSchema = new Schema({
     },
     image: {
         type: String,
-        required: true,
+        required: true
     },
     ingredients: [{
         ingredient: {
@@ -24,7 +24,17 @@ const cocktailKitSchema = new Schema({
     price: {
         type: Number,
         required: true
-    }
+    },
+    quantity: {
+        type: Number,
+        required: true
+    },
+    AlcoholCategory: 
+        {
+          type: Schema.Types.ObjectId,
+          ref: 'AlcoholCategory'
+        }
+      
   });
 
 const CocktailKit = mongoose.model('CocktailKit', cocktailKitSchema);
