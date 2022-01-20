@@ -8,12 +8,13 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import Home from './pages/Home/index.js';
-import Login from './pages/Login/index.js';
-import Signup from './pages/Signup/index.js';
+import LandingPage from './pages/LandingPage';
+import {Home} from './pages/HomePage';
+// import {Login} from './Login/index.js';
+// import Signup from './Signup/index.js';
 import Nav from './components/Nav/index.js';
-import { StoreProvider } from './utils/GlobalState';
-import Success from './pages/Success/index.js';
+// import { StoreProvider } from './utils/GlobalState';
+// import Success from './pages/Success/index.js';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -39,17 +40,15 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          <StoreProvider>
             <Nav />
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route exact path="/login" component={Login} />
-              <Route exact path="/signup" component={Signup} />
-              <Route exact path="/success" component={Success} />
-              <Route exact path="/products/:id" component={Detail} />
-              <Route component={NoMatch} />
+              {/* <Route exact path="/login" component={Login} /> */}
+              {/* <Route exact path="/signup" component={Signup} /> */}
+              {/* <Route exact path="/success" component={Success} /> */}
+              {/* <Route exact path="/products/:id" component={Detail} /> */}
+              {/* <Route component={NoMatch} /> */}
             </Switch>
-          </StoreProvider>
         </div>
       </Router>
     </ApolloProvider>
