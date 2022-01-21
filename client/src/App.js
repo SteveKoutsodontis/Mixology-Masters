@@ -9,10 +9,13 @@ import {
 import { setContext } from '@apollo/client/link/context';
 
 import LandingPage from './pages/LandingPage';
-import {Home} from './pages/HomePage';
-// import {Login} from './Login/index.js';
-// import Signup from './Signup/index.js';
+import Home from './pages/HomePage';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 import Nav from './components/Nav/index.js';
+import Footer from './components/Footer'
+import Header from './components/Header'
+// import Cart from './Cart/index';
 // import { StoreProvider } from './utils/GlobalState';
 // import Success from './pages/Success/index.js';
 
@@ -40,17 +43,31 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-            <Nav />
-            <Switch>
-              <Route exact path="/" component={Home} />
-              {/* <Route exact path="/login" component={Login} /> */}
-              {/* <Route exact path="/signup" component={Signup} /> */}
-              {/* <Route exact path="/success" component={Success} /> */}
-              {/* <Route exact path="/products/:id" component={Detail} /> */}
-              {/* <Route component={NoMatch} /> */}
-            </Switch>
+          <Header/>
+          <Nav />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/login">
+              <Login />
+            </Route>
+            <Route exact path="/signup">
+              <Signup />
+            </Route>
+            {/* <Route exact path="/Cart">
+                  <Cart/>
+                </Route> */}
+            {/* <Route exact path="/success" component={Success} /> */}
+            {/* <Route exact path="/products/:id" component={Detail} /> */}
+            {/* <Route component={NoMatch} /> */}
+
+            
+          </Switch>
         </div>
       </Router>
+      <Footer />
+
     </ApolloProvider>
   );
 }
