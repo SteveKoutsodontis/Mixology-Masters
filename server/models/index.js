@@ -1,8 +1,7 @@
 const User = require('./User');
-const CocktailKit = require('./CocktailKit');
-const AlcoholCategory = require('./AlcoholCategory');
+const Product = require('./Product');
+const Category = require('./Category');
 const Order = require('./Order');
-const AddOnsFood = require('./AddOnsFood');
-const AddOnsZoom = require('./AddOnsZoom');
 
-module.exports = { User, CocktailKit, AlcoholCategory, Order, AddOnsFood, AddOnsZoom };
+
+module.exports = { User, Product, Category, Order };
