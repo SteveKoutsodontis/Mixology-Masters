@@ -102,6 +102,10 @@ const resolvers = {
 
       throw new AuthenticationError('Not logged in');
     },
+    addProduct: async (parent, args) => {
+      const product = await Product.create(args);
+      return product;
+    },
     updateUser: async (parent, args, context) => {
       if (context.user) {
         return await User.findByIdAndUpdate(context.user._id, args, { new: true });
@@ -109,10 +113,10 @@ const resolvers = {
 
       throw new AuthenticationError('Not logged in');
     },
-    updateCocktailKit: async (parent, { _id, quantity }) => {
+    updateProduct: async (parent, { _id, quantity }) => {
       const decrement = Math.abs(quantity) * -1;
 
-      return await cocktailKit.findByIdAndUpdate(_id, { $inc: { quantity: decrement } }, { new: true });
+      return await Product.findByIdAndUpdate(_id, { $inc: { quantity: decrement } }, { new: true });
     },
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });

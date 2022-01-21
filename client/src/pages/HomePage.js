@@ -6,6 +6,9 @@ import Router from 'react-router-dom'
 export const Home = () => {
     return(
     <div className='homePage '>
+        
+
+
         {/* <Header/> */}
         <h1>Blah</h1>
         <p>This could be a paragraph description</p>
