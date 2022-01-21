@@ -11,6 +11,10 @@ const orderSchema = new Schema({
       type: Date,
       required: true
   },
+  Products:[
+    type: 
+    ref: Category //(whisky, food, zoom, gin)
+  ]
   CocktailKit: [
     {
       type: Schema.Types.ObjectId,
