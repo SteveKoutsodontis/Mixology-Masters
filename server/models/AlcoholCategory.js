@@ -12,4 +12,4 @@ const alcoholCategorySchema = new Schema({
 
 const AlcoholCategory = mongoose.model('AlcoholCategory', alcoholCategorySchema);
 
-module.exports = AlcoholCategory;
+// module.exports = AlcoholCategory;
