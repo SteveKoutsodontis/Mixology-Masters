@@ -8,8 +8,8 @@ const typeDefs = gql`
 
   type Product {
     _id: ID
-    name: String
-    image: String
+    name: String!
+    image: String!
     quantity: Int
     description: String
     ingredients: [String]

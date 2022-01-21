@@ -20,12 +20,7 @@ const productSchema = new Schema({
         type: Number,
         required: true
     },
-    ingredients: [{
-        ingredient: {
-            type: String,
-            
-        }
-    }],
+    ingredients: [String],
 
     // for the add on foods it will be description for cocktails it will be did you know
     description: {
