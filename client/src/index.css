@@ -12,7 +12,13 @@
 * {
   box-sizing: border-box;
 }
-
+.content{
+  width: 100%;
+  height: 1000px;
+  background-image: url("./pages/images/backgroundpic.jpg");
+  background-size: cover;
+  background-position: center;
+}
 html,
 body {
   min-height: 100%;

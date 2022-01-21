@@ -4,8 +4,10 @@ import React from 'react';
 
 const LandingPage = () => {
   return <div>
+ 
+
          <h1>Welcome to Mixology-Masters!</h1>
-        <p>This could be a paragraph description</p>
+        <p>"There's always a reason to toast!  Set a date to learn how to make the perfect cocktail with a master mixologist.  Select your cocktail kit inside...."</p>
   </div>;
 };
 

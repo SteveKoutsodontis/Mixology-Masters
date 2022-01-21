@@ -45,6 +45,7 @@ function App() {
         <div>
           <Header/>
           <Nav />
+          <div className= "content">
           <Switch>
             <Route exact path="/">
               <Home />
@@ -64,6 +65,7 @@ function App() {
 
             
           </Switch>
+          </div>
         </div>
       </Router>
       <Footer />
