@@ -1,14 +1,14 @@
 const db = require('./connection');
-const { User, CocktailKit, AlcoholCategory } = require('../models');
-const AlcoholCategory = require('../models/AlcoholCategory');
 const food = require('../schemas/Addonsfood.son');
 const alcohol = require('../schemas/Cocktailkit.json');
 const zoom = require('../schemas/Addonszoom.json')
+const { User, Product, Category } = require('../models');
+const Category = require('../models/Category');
 
 db.once('open', async () => {
-  await AlcoholCategory.deleteMany();
+  await Category.deleteMany();
 
-  const alcoholCategories = await AlcoholCategory.insertMany([
+  const categories = await Category.insertMany([
     { name: 'Gin' },
     { name: 'Rum' },
     { name: 'Vodka' },
