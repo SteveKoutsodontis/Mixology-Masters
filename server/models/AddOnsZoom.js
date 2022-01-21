@@ -15,7 +15,12 @@ const addOnsZoomSchema = new Schema({
     price: {
         type: Number,
         required: true
-    }
+    },
+    Category: 
+        {
+          type: Schema.Types.ObjectId,
+          ref: 'Category'
+        }
   });
 
 const AddOnsZoom = mongoose.model('AddOnsZoom', addOnsZoomSchema);

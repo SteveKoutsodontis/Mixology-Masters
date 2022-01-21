@@ -9,24 +9,11 @@ const orderSchema = new Schema({
   },
   eventDate: {
       type: Date,
-      required: true
   },
-  CocktailKit: [
+  Product: [
     {
       type: Schema.Types.ObjectId,
-      ref: 'CocktailKit'
-    }
-  ],
-  AddOnsZoom: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: 'AddOnsZoom'
-    }
-  ],
-  AddOnsFood: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: 'AddOnsFood'
+      ref: 'Product'
     }
   ]
 });
