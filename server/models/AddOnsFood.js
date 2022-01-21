@@ -19,7 +19,12 @@ const addOnsFoodSchema = new Schema({
     price: {
         type: Number,
         required: true
-    }
+    },
+    Category: 
+        {
+          type: Schema.Types.ObjectId,
+          ref: 'Category'
+        }
   });
 
 const AddOnsFood = mongoose.model('AddOnsFood', addOnsFoodSchema);

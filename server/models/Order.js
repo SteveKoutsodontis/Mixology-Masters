@@ -9,28 +9,11 @@ const orderSchema = new Schema({
   },
   eventDate: {
       type: Date,
-      required: true
   },
-  Products:[
-    type: 
-    ref: Category //(whisky, food, zoom, gin)
-  ]
-  CocktailKit: [
+  Product: [
     {
       type: Schema.Types.ObjectId,
-      ref: 'CocktailKit'
-    }
-  ],
-  AddOnsZoom: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: 'AddOnsZoom'
-    }
-  ],
-  AddOnsFood: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: 'AddOnsFood'
+      ref: 'Product'
     }
   ]
 });
