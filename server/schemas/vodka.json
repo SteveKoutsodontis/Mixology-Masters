@@ -1,0 +1,47 @@
+[
+    {
+        "category": "Vodka",
+        "name": "White Russian",
+        "image": "",
+        "ingredients": " Vodka, Coffee Liqueur, Cream, Milk, Chocolate Powder, Coffee Bean",
+        "price": 15.00,
+        "description": "The White Russian is the favourite drink of Jeffrey The Dude Lebowski, the main character of the 1998 film, The Big Lebowski."
+
+    },
+    {
+        "category": "Vodka",
+        "name": "Cosmopolitan",
+        "image": "",
+        "ingredients": "Citrus Vodka,Triple Sec, Cranberry Juice, squeezed lemon, Sugar Syrup",
+        "price": 15.00,
+        "description": "The Cosmopolitan gained significant popularity in the 1990s partly due to the fact that Sarah Jessica Parkers character, Carrie Bradshaw, in the hit televsion programme, Sex in the City, often ordered the drink."
+
+    },
+    {
+        "category": "Vodka",
+        "name": "French Martini",
+        "image": "",
+        "ingredients": " Vodka, Chambord, Pineapple Juice, Raspberries for Garnish",
+        "price": 15.00,
+        "description": "The part that makes this a French martini is the Chambord raspberry liqueur."
+
+    },
+    {
+        "category": "Vodka",
+        "name": "Espresso Maritni",
+        "image": "",
+        "ingredients": "Vanilla Vodka, Kahlúa, Double Espresso, Sugar Syrup, 3 Coffee Beans",
+        "price": 15.00,
+        "description": "Coffee is the second most traded commodity on earth."
+
+    },
+    {
+        "category": "Vodka",
+        "name": "Moscow Mule",
+        "image": "",
+        "ingredients": "Vodka, Lime juice, Sugar Syrup, splash Ginger Beer",
+        "price": 15.00,
+        "description": "The Moscow Mule was invented in 1941 John G Martin at a bar in Sunset Boulevard which was popular with celebrities."
+
+    }
+]
