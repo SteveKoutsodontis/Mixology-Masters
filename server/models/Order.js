@@ -10,7 +10,7 @@ const orderSchema = new Schema({
   eventDate: {
       type: Date,
   },
-  Products: [
+  products: [
     {
       type: Schema.Types.ObjectId,
       ref: 'Product'
