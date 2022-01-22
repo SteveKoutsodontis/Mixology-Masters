@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client';
-
+// ingredients[]???
 export const QUERY_PRODUCTS = gql`
   query getProducts($category: ID) {
     products(category: $category) {
@@ -23,15 +23,17 @@ export const QUERY_CHECKOUT = gql`
     }
   }
 `;
-
+// ingredients[]???
 export const QUERY_ALL_PRODUCTS = gql`
   {
     products {
       _id
       name
+      image
       description
       price
       quantity
+      
       category {
         name
       }
@@ -48,6 +50,7 @@ export const QUERY_CATEGORIES = gql`
   }
 `;
 
+// ingredients[] ???
 export const QUERY_USER = gql`
   {
     user {
@@ -56,10 +59,12 @@ export const QUERY_USER = gql`
       orders {
         _id
         purchaseDate
+        eventDate
         products {
           _id
           name
           description
+        
           price
           quantity
           image
