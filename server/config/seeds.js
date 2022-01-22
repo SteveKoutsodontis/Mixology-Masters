@@ -1,6 +1,6 @@
 const db = require('./connection');
 const { User, Product, Category } = require('../models');
-const Category = require('../models/Category');
+
 
 db.once('open', async () => {
   await Category.deleteMany();
@@ -10,7 +10,9 @@ db.once('open', async () => {
     { name: 'Rum' },
     { name: 'Vodka' },
     { name: 'Tequila' },
-    { name: 'Whiskey' }
+    { name: 'Whiskey' },
+    { name: 'AddOnsFood' },
+    { name: 'AddOnsZoom' }
   ]);
 
   console.log('categories seeded');
@@ -23,6 +25,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
+      ingredients: ["vodka", "cherry", "ice"],
       category: categories[0]._id,
       price: 2.99,
       quantity: 500
@@ -100,7 +103,7 @@ db.once('open', async () => {
     },
     {
       name: 'Set of Plastic Horses',
-      category: categories[4]._id,
+      category: categories[5]._id,
       description:
         'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
       image: 'plastic-horses.jpg',
@@ -109,7 +112,7 @@ db.once('open', async () => {
     },
     {
       name: 'Teddy Bear',
-      category: categories[4]._id,
+      category: categories[6]._id,
       description:
         'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
       image: 'teddy-bear.jpg',

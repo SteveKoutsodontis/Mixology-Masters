@@ -10,11 +10,12 @@ export const LOGIN = gql`
     }
   }
 `;
-
+        // ingredients[] ???
 export const ADD_ORDER = gql`
   mutation addOrder($products: [ID]!) {
     addOrder(products: $products) {
       purchaseDate
+      eventDate
       products {
         _id
         name
@@ -49,3 +50,20 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+// ingredients[]???
+export const ADD_PRODUCT = gql`
+mutation addProduct($name: String!, $description: String, $quantity: Int!,$price: Float!,$image:String!, $ingredients: [String], $category:ID!) {
+  addProduct (name: $name, description: $description, quantity: $quantity, price: $price, image:$image, ingredients:$ingredients,category: $category){
+      _id
+      name
+      description
+    	quantity
+      price
+      image
+    
+      category {
+        _id
+      }
+     }
+}`
