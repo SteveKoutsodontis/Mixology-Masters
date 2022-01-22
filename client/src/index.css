@@ -209,6 +209,15 @@ input:focus {
   color: var(--error);
 }
 
+.styledLink {
+  text-decoration: none;
+  color: red;
+}
+
+.backgroundWhite {
+  background: white;
+}
+
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;

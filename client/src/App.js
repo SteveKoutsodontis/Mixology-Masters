@@ -12,12 +12,13 @@ import LandingPage from './pages/LandingPage';
 import Home from './pages/HomePage';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import Nav from './components/Nav/index.js';
+import Navigation from './components/Navigation/index.js';
 import Footer from './components/Footer'
 import Header from './components/Header'
 // import Cart from './Cart/index';
 // import { StoreProvider } from './utils/GlobalState';
 // import Success from './pages/Success/index.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -41,33 +42,31 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <Router>
-        <div>
-          <Header/>
-          <Nav />
-          <div className= "content">
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/login">
-              <Login />
-            </Route>
-            <Route exact path="/signup">
-              <Signup />
-            </Route>
-            {/* <Route exact path="/Cart">
+      <div>
+        <Header />
+        <div className="content">
+          <Router>
+            <Navigation />
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route exact path="/login">
+                <Login />
+              </Route>
+              <Route exact path="/signup">
+                <Signup />
+              </Route>
+              {/* <Route exact path="/Cart">
                   <Cart/>
                 </Route> */}
-            {/* <Route exact path="/success" component={Success} /> */}
-            {/* <Route exact path="/products/:id" component={Detail} /> */}
-            {/* <Route component={NoMatch} /> */}
-
-            
-          </Switch>
-          </div>
+              {/* <Route exact path="/success" component={Success} /> */}
+              {/* <Route exact path="/products/:id" component={Detail} /> */}
+              {/* <Route component={NoMatch} /> */}
+            </Switch>
+          </Router>
         </div>
-      </Router>
+      </div>
       <Footer />
 
     </ApolloProvider>
