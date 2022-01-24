@@ -16,6 +16,8 @@ const QUERY_COCKTAILS = gql`
   }
 `;
 
+
+
 const QUERY_CHECKOUT = gql`
   query getCheckout($products: [ID]!) {
     checkout(products: $products) {
