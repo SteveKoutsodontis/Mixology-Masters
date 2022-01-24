@@ -24,7 +24,7 @@ db.once('open', async () => {
       name: 'Tin of Cookies',
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-      image: 'cookie-tin.jpg',
+      image: 'https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg',
       ingredients: ["vodka", "cherry", "ice"],
       category: categories[0]._id,
       price: 2.99,
@@ -34,7 +34,7 @@ db.once('open', async () => {
       name: 'Canned Coffee',
       description:
         'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
-      image: 'canned-coffee.jpg',
+      image: 'https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg',
       category: categories[0]._id,
       price: 1.99,
       quantity: 500
@@ -44,7 +44,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
-      image: 'toilet-paper.jpg',
+      image: 'https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg',
       price: 7.99,
       quantity: 20
     },
@@ -53,7 +53,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
-      image: 'soap.jpg',
+      image: 'https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg',
       price: 3.99,
       quantity: 50
     },

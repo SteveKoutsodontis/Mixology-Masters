@@ -1,11 +1,12 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import Router from "react-router-dom";
+import Col from "react-bootstrap/Col";
 
 export function Cocktailcard(props) {
   return (
-    <div className="cocktail">
-      <Card style={{ width: "18rem" }}>
+    <Col md={3}>
+      <Card border="secondary"  style={{ width: "12rem" }}>
         <Card.Img variant="top" src={props.image} />
         <Card.Body>
           <Card.Title>{props.name}</Card.Title>
@@ -13,7 +14,7 @@ export function Cocktailcard(props) {
           <Button variant="primary">Add To Cart</Button>
         </Card.Body>
       </Card>
-    </div>
+    </Col>
   );
 }
 
