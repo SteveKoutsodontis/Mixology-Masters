@@ -238,6 +238,11 @@ input:focus {
 .backgroundWhite {
   background: white;
 }
+.cartItemsContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 @media screen and (max-width: 768px) {
   .card {
