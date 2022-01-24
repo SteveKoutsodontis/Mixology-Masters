@@ -8,14 +8,14 @@ const resolvers = {
     categories: async () => {
       return await Category.find();
     },
-    products: async (parent, { category }) => {
-      const params = {};
+    products: async (parent, args) => {
+      // const params = {};
 
-      if (category) {
-        params.category = category;
-      }
+      // if (category) {
+      //   params.category = category;
+      // }
 
-      return await Product.find(params).populate('category');
+      return await Product.find().populate('category');
     },
     product: async (parent, { _id }) => {
       return await Product.findById(_id).populate('category');

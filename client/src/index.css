@@ -27,7 +27,10 @@ body {
   background-image: url("./pages/images/MM_Bg2.png");
   background-repeat: repeat;
 }
-
+.landingPageText{
+  color: white;
+  font-weight: 900;
+}
 body {
   margin: 0;
   padding: 0;
