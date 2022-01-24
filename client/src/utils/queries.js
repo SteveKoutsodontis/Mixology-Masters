@@ -1,8 +1,8 @@
 import { gql } from '@apollo/client';
 // ingredients[]???
-export const QUERY_PRODUCTS = gql`
-  query getProducts($category: ID) {
-    products(category: $category) {
+const QUERY_COCKTAILS = gql`
+  query getCocktails{
+    products {
       _id
       name
       description
@@ -16,7 +16,7 @@ export const QUERY_PRODUCTS = gql`
   }
 `;
 
-export const QUERY_CHECKOUT = gql`
+const QUERY_CHECKOUT = gql`
   query getCheckout($products: [ID]!) {
     checkout(products: $products) {
       session
@@ -24,24 +24,8 @@ export const QUERY_CHECKOUT = gql`
   }
 `;
 // ingredients[]???
-export const QUERY_ALL_PRODUCTS = gql`
-  {
-    products {
-      _id
-      name
-      image
-      description
-      price
-      quantity
-      
-      category {
-        name
-      }
-    }
-  }
-`;
 
-export const QUERY_CATEGORIES = gql`
+const QUERY_CATEGORIES = gql`
   {
     categories {
       _id
@@ -51,7 +35,7 @@ export const QUERY_CATEGORIES = gql`
 `;
 
 // ingredients[] ???
-export const QUERY_USER = gql`
+const QUERY_USER = gql`
   {
     user {
       firstName
@@ -73,3 +57,5 @@ export const QUERY_USER = gql`
     }
   }
 `;
+
+export { QUERY_COCKTAILS, QUERY_CHECKOUT, QUERY_CATEGORIES, QUERY_USER}
