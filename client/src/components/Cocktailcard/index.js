@@ -3,6 +3,26 @@ import { Card, Button } from "react-bootstrap";
 import Router from "react-router-dom";
 import Col from "react-bootstrap/Col";
 
+
+
+const addToCart = () => {
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export function Cocktailcard(props) {
   console.log('props', props);
   return (
