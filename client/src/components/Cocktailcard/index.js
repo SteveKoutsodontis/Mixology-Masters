@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 export function Cocktailcard(props) {
   return (
     <Col md={3}>
-      <Card border="secondary"  style={{ width: "12rem" }}>
+      <Card border="secondary" mb-3 style={{ width: "12rem" }}>
         <Card.Img variant="top" src={props.image} />
         <Card.Body>
           <Card.Title>{props.name}</Card.Title>
