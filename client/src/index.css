@@ -23,7 +23,10 @@ html,
 body {
   min-height: 100%;
 }
-
+.landingPageText{
+  color: white;
+  font-weight: 900;
+}
 body {
   margin: 0;
   padding: 0;
