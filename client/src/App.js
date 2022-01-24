@@ -13,7 +13,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Navigation from './components/Navigation/index.js';
 import Footer from './components/Footer'
-// import Cart from './components/Cart';
+import Cart from './pages/Cart';
 // import { StoreProvider } from './utils/GlobalState';
 // import Success from './pages/Success/index.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -58,7 +58,7 @@ function App() {
                 <Signup />
               </Route>
               <Route exact path="/Cart">
-                  {/* <Cart/> */}
+                  <Cart/>
                 </Route>
               {/* <Route exact path="/success" component={Success} /> */}
               {/* <Route exact path="/products/:id" component={Detail} /> */}
