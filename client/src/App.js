@@ -45,9 +45,9 @@ function App() {
           <Router>
             <Navigation />
             <Switch>
-            {/* <Route exact path="/">
+            <Route exact path="/">
                 <LandingPage />
-              </Route> */}
+              </Route>
               <Route exact path="/Home">
                 <Home />
               </Route>
