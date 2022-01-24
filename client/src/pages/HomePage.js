@@ -2,13 +2,13 @@ import React from 'react';
 // import Header from './Header/index.js'
 import Router from 'react-router-dom'
 import { useQuery } from '@apollo/client';
-import { queryLiquor} from '../utils/queries';
+import { QUERY_COCKTAILS } from '../utils/queries';
 
 
 
 export const Home = () => {
-    // const { loading, data } = useQuery(queryLiquor)
-
+    const { loading, data } = useQuery(QUERY_COCKTAILS)
+    console.log(data);
     // const liquors = data?.obj|| {};
     return(
     <div className='homePage '>

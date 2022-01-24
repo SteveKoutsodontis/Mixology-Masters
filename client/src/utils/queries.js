@@ -1,8 +1,24 @@
 import { gql } from '@apollo/client';
 // ingredients[]???
-export const QUERY_PRODUCTS = gql`
-  query getProducts($category: ID) {
-    products(category: $category) {
+// export const QUERY_PRODUCTS = gql`
+//   query getProducts($category: ID) {
+//     products(category: $category) {
+//       _id
+//       name
+//       description
+//       price
+//       quantity
+//       image
+//       category {
+//         _id
+//       }
+//     }
+//   }
+// `;
+
+export const QUERY_COCKTAILS = gql`
+  query getCocktails {
+    products {
       _id
       name
       description

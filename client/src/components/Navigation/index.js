@@ -11,7 +11,7 @@ export default function Navigation() {
                 <>
                     <Navbar bg="light" expand="lg">
                         <Container>
-                            <Navbar.Brand href="/">Mixology Masters</Navbar.Brand>
+                            <Navbar.Brand href="/Home">Mixology Masters</Navbar.Brand>
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="me-auto">
@@ -28,7 +28,7 @@ export default function Navigation() {
                 <>
                     <Navbar bg="light" expand="lg">
                         <Container>
-                            <Navbar.Brand href="/">Mixology Masters</Navbar.Brand>
+                            <Navbar.Brand href="/Home">Mixology Masters</Navbar.Brand>
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="me-auto">
