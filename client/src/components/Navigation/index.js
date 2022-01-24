@@ -20,7 +20,7 @@ export default function Navigation() {
                             <Navbar.Brand href="/Home">Mixology Masters</Navbar.Brand>
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">
-                                <Nav className="me-auto">
+                                <Nav className="ml-auto">
                                     <Link to="/Cart">Cart</Link>
                                     <Link to= "/" className="styledLink" onClick={logout}>Logout</Link>
                                 </Nav>
@@ -38,9 +38,10 @@ export default function Navigation() {
                             <Navbar.Brand href="/Home">Mixology Masters</Navbar.Brand>
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">
-                                <Nav className="me-auto">
+                                <Nav className="ml-auto">
                                     <Link to="/login">Login</Link>
                                     <Link to="/signup">Signup</Link>
+                                    <Link to="/Cart">Cart</Link>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>

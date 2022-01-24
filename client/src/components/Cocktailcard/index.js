@@ -4,6 +4,7 @@ import Router from "react-router-dom";
 import Col from "react-bootstrap/Col";
 
 export function Cocktailcard(props) {
+  console.log('props', props);
   return (
     <Col md={3}>
       <Card border="secondary"  style={{ width: "12rem" }}>

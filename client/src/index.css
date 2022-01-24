@@ -21,6 +21,16 @@
   background-repeat: repeat-y;
 
 }
+/* 
+.bg {
+  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).webp");
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+
 html,
 body {
   /* min-height: 100%; */
@@ -28,7 +38,7 @@ body {
   background-repeat: repeat;
 }
 .landingPageText{
-  color: white;
+  /* color: white; */
   font-weight: 900;
 }
 body {
@@ -185,6 +195,10 @@ input:focus {
 .my-2 {
   margin-top: var(--spacing-two);
   margin-bottom: var(--spacing-two);
+}
+
+.ml-auto {
+  justify-content: space-between;
 }
 
 .px-1 {
