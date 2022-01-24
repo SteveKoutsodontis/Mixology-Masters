@@ -6,6 +6,17 @@ const typeDefs = gql`
     name: String!
   }
 
+  type CartItem {
+    _id: ID
+    product: ID!
+    quantity: Int!
+  }
+
+  type Cart {
+    _id: ID
+    items: [CartItem]
+  }
+
   type Product {
     _id: ID
     name: String!

@@ -3,8 +3,15 @@ import { Card, Button } from "react-bootstrap";
 import Router from "react-router-dom";
 import Col from "react-bootstrap/Col";
 
+
 export function Cocktailcard(props) {
   console.log('props', props);
+
+  const addToCart = () => {
+
+  }
+
+  
   return (
     <Col md={3}>
       <Card border="secondary" mb-3 style={{ width: "12rem" }}>
@@ -12,7 +19,7 @@ export function Cocktailcard(props) {
         <Card.Body>
           <Card.Title>{props.name}</Card.Title>
           <Card.Text>{props.description}</Card.Text>
-          <Button variant="primary">Add To Cart</Button>
+          <Button onClick={addToCart}variant="primary">Add To Cart</Button>
         </Card.Body>
       </Card>
     </Col>
