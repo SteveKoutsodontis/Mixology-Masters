@@ -10,7 +10,25 @@ export const LOGIN = gql`
     }
   }
 `;
-        // ingredients[] ???
+
+// export const ADD_CART_ITEM = gql`
+//   mutation addCartItem($products: [ID]!, $quantity: Int) {
+//   addCartItem(products: $products, quantity: $quantity) {
+//   product {
+//       _id
+//       name
+//       description
+//       price
+//       quantity
+//       category {
+//         name
+//       }
+//     }
+//   }
+// }
+// `;
+
+
 export const ADD_ORDER = gql`
   mutation addOrder($products: [ID]!) {
     addOrder(products: $products) {

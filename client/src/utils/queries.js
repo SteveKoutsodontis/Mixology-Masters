@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client';
-// ingredients[]???
+
 const QUERY_COCKTAILS = gql`
   query getCocktails{
     products {
@@ -23,7 +23,6 @@ const QUERY_CHECKOUT = gql`
     }
   }
 `;
-// ingredients[]???
 
 const QUERY_CATEGORIES = gql`
   {
@@ -34,7 +33,6 @@ const QUERY_CATEGORIES = gql`
   }
 `;
 
-// ingredients[] ???
 const QUERY_USER = gql`
   {
     user {
@@ -58,5 +56,5 @@ const QUERY_USER = gql`
   }
 `;
 
-export { QUERY_COCKTAILS, QUERY_CHECKOUT, QUERY_CATEGORIES, QUERY_USER}
+export { QUERY_COCKTAILS, QUERY_CHECKOUT, QUERY_CATEGORIES, QUERY_USER, QUERY_CARTITEMS}
 
