@@ -5,7 +5,7 @@ import { Card,Button } from "react-bootstrap";
 export const Cart = () => {
   
   return(
-  <div className= "row">
+  <div className= "row backgroundImg">
     <div className="col-10 cartItemsContainer">
      <Card>
         {/* <Card.Img  variant="top" src={props.image} /> */}

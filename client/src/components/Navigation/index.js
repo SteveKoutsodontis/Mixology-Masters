@@ -18,15 +18,15 @@ export default function Navigation() {
                 <>
                     <Navbar bg="light" expand="lg">
                         <Container>
-                            <a href="/Home">
+                            <Link to="/Home" className="links">
                                 <img src={logo} style={{ width: 70, marginTop: -10 }} />
-                            </a>
-                            <Navbar.Brand href="/Home">Mixology Masters</Navbar.Brand>
+                            </Link>
+                            <Navbar.Brand><Link to="/Home" className="links">Mixology Masters</Link></Navbar.Brand>
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="ml-auto">
-                                    <Link to="/Cart">Cart</Link>
-                                    <Link to="/" className="styledLink" onClick={logout}>Logout</Link>
+                                    <Link className="ml-5 links" to="/Cart">Cart</Link>
+                                    <Link className="ml-5 links styledLink" to="/" onClick={logout}>Logout</Link>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>
@@ -39,16 +39,16 @@ export default function Navigation() {
                 <>
                     <Navbar bg="light" expand="lg">
                         <Container>
-                            <a href="/Home">
+                            <Link to="/Home" className="links">
                                 <img src={logo} style={{ width: 70, marginTop: -12 }} />
-                            </a>
-                            <Navbar.Brand href="/Home">Mixology Masters</Navbar.Brand>
+                            </Link>
+                            <Navbar.Brand><Link to="/Home" className="links">Mixology Masters</Link></Navbar.Brand>
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="ml-auto">
-                                    <Link to="/login">Login</Link>
-                                    <Link to="/signup">Signup</Link>
-                                    <Link to="/Cart">Cart</Link>
+                                    <Link className="ml-5 links" to="/login">Login</Link>
+                                    <Link className="ml-5 links" to="/signup">Signup</Link>
+                                    <Link className="ml-5 links" to="/Cart">Cart</Link>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>

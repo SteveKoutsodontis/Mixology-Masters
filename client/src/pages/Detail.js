@@ -8,7 +8,7 @@ const Detail = () => {
     const { id } = useParams();
     console.log('id', id)
     return (
-        <div className="col-12">
+        <div className="col-12 backgroundImg">
             <Button href="/Home" variant='primary'>
                 Back to home
             </Button>

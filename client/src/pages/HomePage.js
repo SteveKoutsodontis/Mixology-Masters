@@ -19,7 +19,7 @@ export const Home = () => {
   }
 
   return (
-    <div className="homePage text-center">
+    <div className="homePage text-center backgroundImg">
       <h2>
         Select the cocktails you will be learning to create with your personal
         Master Mixologist!
