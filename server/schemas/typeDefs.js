@@ -9,7 +9,7 @@ const typeDefs = gql`
   type CartItem {
     _id: ID
     product: ID!
-    quantity: Int!
+    quantity: Int
   }
 
   type Cart {
@@ -55,6 +55,7 @@ const typeDefs = gql`
 
   type Query {
     categories: [Category]
+    cart: [CartItems]
     products: [Product]
     product(_id: ID!): Product
     user: User
@@ -63,6 +64,8 @@ const typeDefs = gql`
   }
 
   type Mutation {
+    addCart(): Cart
+    addCartItem(products:[ID]!,quantity:Int): CartItem
     addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
     addOrder(products: [ID]!): Order
     addProduct(name: String!, description: String, quantity: Int!, price: Float!, image: String!, ingredients: [String], category: ID!): Product
