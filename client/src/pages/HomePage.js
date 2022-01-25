@@ -11,13 +11,12 @@ import Col from "react-bootstrap/Col";
 export const Home = () => {
   const { loading, data } = useQuery(QUERY_COCKTAILS);
   const cocktails = data?.products || [];
-  console.log("loading", loading);
-  console.log("data", data);
+
   console.log("cocktails: ", cocktails);
 
 
   return (
-    <div className="homePage text-center">
+    <div className="homePage text-center backgroundImg">
       <h2>
         Select the cocktails you will be learning to create with your personal
         Master Mixologist!

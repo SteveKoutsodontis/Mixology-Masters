@@ -4,7 +4,6 @@ import { Card, Button } from "react-bootstrap";
 import { useLazyQuery } from "@apollo/client";
 import { QUERY_PRODUCT } from "../utils/queries";
 
-
 const Detail = () => {
   const { id } = useParams();
   const [getProduct, { loading, error, data }] = useLazyQuery(QUERY_PRODUCT);
@@ -45,12 +44,10 @@ const Detail = () => {
             <Card>
               <Card.Body>
                 <Card.Title>{data.product.name}</Card.Title>
-                <Card.Img
-              src={
-                data.product.image
-              }
-            ></Card.Img>
+                <Card.Img src={data.product.image}></Card.Img>
                 <Card.Text>{data.product.description}</Card.Text>
+                <Card.Title>Price</Card.Title>
+                <Card.Text>{data.product.price}</Card.Text>
               </Card.Body>
             </Card>
           </div>
@@ -66,11 +63,16 @@ const Detail = () => {
           </div>
         </div>
       ) : (
-        <div> Loading.....</div>
+        <div>
+          <Card>
+            <Card.Body>
+              <Card.Text>Loading.....</Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
       )}
     </div>
   );
 };
 
 export default Detail;
-
