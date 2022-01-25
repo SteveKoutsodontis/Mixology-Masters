@@ -1,5 +1,4 @@
 import { gql } from '@apollo/client';
-
 const QUERY_COCKTAILS = gql`
   query getCocktails{
     products {
@@ -15,7 +14,6 @@ const QUERY_COCKTAILS = gql`
     }
   }
 `;
-
 export const QUERY_PRODUCT = gql`
   query getProduct($product: ID!) {
     product(_id: $product) {
@@ -32,8 +30,6 @@ export const QUERY_PRODUCT = gql`
     }
   }
 `;
-
-
 const QUERY_CARTITEMS = gql`
   query getCartItems{
     cartItems {
@@ -49,7 +45,6 @@ const QUERY_CARTITEMS = gql`
     }
   }
 `;
-
 const QUERY_CHECKOUT = gql`
   query getCheckout($products: [ID]!) {
     checkout(products: $products) {
@@ -57,7 +52,6 @@ const QUERY_CHECKOUT = gql`
     }
   }
 `;
-
 const QUERY_CATEGORIES = gql`
   {
     categories {
@@ -66,7 +60,6 @@ const QUERY_CATEGORIES = gql`
     }
   }
 `;
-
 const QUERY_USER = gql`
   {
     user {
@@ -89,6 +82,5 @@ const QUERY_USER = gql`
     }
   }
 `;
-
 export { QUERY_COCKTAILS, QUERY_CHECKOUT, QUERY_CATEGORIES, QUERY_USER, QUERY_CARTITEMS}
 
