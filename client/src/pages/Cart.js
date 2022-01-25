@@ -23,18 +23,28 @@ export const Cart = () => {
 <Card className="text-center">
   <Card.Body>
     <Card.Title>Mixology Pack Selected</Card.Title>
+
     <Card.Img></Card.Img>
     <Card.Text>
-    
+    <Card.Header>Items</Card.Header>
+    <Card.Img></Card.Img>
+<li className="text-center">1</li>
+<Button variant="primary">Remove From Cart</Button>
+<li className="text-center">2</li><
+  Button variant="primary">Remove From Cart</Button>
+<li className="text-center">3</li>
+<Button variant="primary">Remove From Cart</Button>
+ <li className="text-center">4</li>
+ <Button variant="primary">Remove From Cart</Button>
     </Card.Text>
-    <Button variant="primary">Remove From Cart</Button>
+    <Card.Footer></Card.Footer>
+    <Button variant="primary">Remove All From Cart</Button>
   </Card.Body>
 </Card>
     <div className="col-12 itemsInCart">
       <div>
       <Card.Body>
-      <Button variant="primary">Remove From Cart</Button>
-    <Card.Title>Subtotal</Card.Title>
+    <Card.Title>Subtotal:</Card.Title>
     <Card.Text>
     <h2>Happy Drinking</h2>
     </Card.Text>

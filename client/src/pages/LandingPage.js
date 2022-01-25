@@ -16,7 +16,7 @@ const LandingPage = () => {
           Pick your poison!
         </Button>
         
-      Hello World
+      
     </div>
 
   </div>;
