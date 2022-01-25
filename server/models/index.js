@@ -6,3 +6,4 @@ const CartItem = require('./CartItem');
 
 
 module.exports = { User, Product, Category, Order, CartItem };
+// module.exports = { User, Product, Category, Order};

@@ -16,9 +16,27 @@ const QUERY_COCKTAILS = gql`
   }
 `;
 
-const QUERY_CART = gql`
-  query getCart{
-    products {
+export const QUERY_PRODUCT = gql`
+  query getProduct($product: ID!) {
+    product(product: $product) {
+      _id
+      name
+      description
+      price
+      quantity
+      ingredients
+      image
+      category {
+        _id
+      }
+    }
+  }
+`;
+
+
+const QUERY_CARTITEMS = gql`
+  query getCartItems{
+    cartItems {
       _id
       name
       description
@@ -39,7 +57,6 @@ const QUERY_CHECKOUT = gql`
     }
   }
 `;
-// ingredients[]???
 
 const QUERY_CATEGORIES = gql`
   {
@@ -50,7 +67,6 @@ const QUERY_CATEGORIES = gql`
   }
 `;
 
-// ingredients[] ???
 const QUERY_USER = gql`
   {
     user {
@@ -74,4 +90,5 @@ const QUERY_USER = gql`
   }
 `;
 
-export { QUERY_COCKTAILS, QUERY_CHECKOUT, QUERY_CATEGORIES, QUERY_USER, QUERY_CART}
+export { QUERY_COCKTAILS, QUERY_CHECKOUT, QUERY_CATEGORIES, QUERY_USER, QUERY_CARTITEMS}
+
