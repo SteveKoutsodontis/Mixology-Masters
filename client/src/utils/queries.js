@@ -16,24 +16,15 @@ const QUERY_COCKTAILS = gql`
   }
 `;
 
-<<<<<<< HEAD
 export const QUERY_PRODUCT = gql`
   query getProduct($product: ID!) {
-    product(product: $product) {
-=======
-export const QUERY_COCKTAIL = gql`
-  query getCocktail($category: ID) {
-    products(category: $category) {
->>>>>>> 3479b11a16464f306aeda17de4eac9661220ed92
+    product(_id: $product) {
       _id
       name
       description
       price
       quantity
-<<<<<<< HEAD
       ingredients
-=======
->>>>>>> 3479b11a16464f306aeda17de4eac9661220ed92
       image
       category {
         _id

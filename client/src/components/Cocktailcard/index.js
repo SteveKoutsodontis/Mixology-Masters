@@ -7,27 +7,23 @@ import { Link } from "react-router-dom";
 const addToCart = () => {};
 
 export function Cocktailcard(props) {
-  console.log("props", props);
 
   const addToCart = () => {};
 
   return (
     <Col md={3}>
-      <Card border="secondary" mb-3 style={{ width: "12rem" }}>
+      {/* <Card border="secondary" mb-3 style={{ width: "12rem" }}> */}
+      <Card border="secondary" style={{ width: "12rem" }}>
         <Card.Img variant="top" src={props.image} />
         <Card.Body>
           <Link to={`/products/${props._id}`}>
             <Card.Title>{props.name}</Card.Title>
           </Link>
-<<<<<<< HEAD
-          <Card.Text>{props.description}</Card.Text>
+
+          <Card.Text>{props.price}</Card.Text>
           <Button onClick={addToCart} variant="primary">
             Add To Cart
           </Button>
-=======
-          <Card.Text>{props.price}</Card.Text>
-          <Button variant="primary">Add To Cart</Button>
->>>>>>> 3479b11a16464f306aeda17de4eac9661220ed92
         </Card.Body>
       </Card>
     </Col>
