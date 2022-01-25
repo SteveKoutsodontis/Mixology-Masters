@@ -8,7 +8,7 @@ import { QUERY_PRODUCT } from "../utils/queries";
 
 const Detail = () => {
   const { id } = useParams();
-console.log({id});
+  console.log({ id });
   const [getProduct, { loading, error, data }] = useLazyQuery(QUERY_PRODUCT);
   console.log("data", data);
 
@@ -28,7 +28,7 @@ console.log({id});
       <Button href="/Home" variant="primary">
         Back to home
       </Button>
-      <div className="row">
+      {/* <div className="row">
         <Card>
           <Card.Body>
             <Card.Title>Name of Cocktail</Card.Title>
@@ -40,7 +40,7 @@ console.log({id});
             <Card.Text>Price:</Card.Text>
           </Card.Body>
         </Card>
-      </div>
+      </div> */}
 
       {data ? (
         <div>
@@ -48,7 +48,11 @@ console.log({id});
             <Card>
               <Card.Body>
                 <Card.Title>{data.product.name}</Card.Title>
+                <Card.Img src={data.product.image}></Card.Img>
+                <Card.Title>Did You Know?</Card.Title>
                 <Card.Text>{data.product.description}</Card.Text>
+                <Card.Title>Price</Card.Title>
+                <Card.Text>{data.product.price}</Card.Text>
               </Card.Body>
             </Card>
           </div>
@@ -64,7 +68,13 @@ console.log({id});
           </div>
         </div>
       ) : (
-        <div> Loading.....</div>
+        <div>
+          <Card>
+            <Card.Body>
+            <Card.Text>Loading.....</Card.Text>
+            </Card.Body>
+            </Card>
+        </div>
       )}
     </div>
   );

@@ -64,7 +64,7 @@ export default function Cocktail() {
       ingredients,
     } = Cocktail;
     return (
-      <section className="section cocktail-section">
+      <section className="section cocktail-section backgroundImg">
         <Link className="btn btn-primary" to="/">
           back home
         </Link>
