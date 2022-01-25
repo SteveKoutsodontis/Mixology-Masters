@@ -26,6 +26,10 @@
   margin-left: 10%;
 }
 
+.titleDrink {
+  font-size: xx-large !important;
+}
+
 .backgroundImg {
   background-image: url("./pages/images/MM_Bg2.png");
   background-repeat: repeat;
@@ -49,7 +53,7 @@
 }
 
 .landingPageImg {
-  height: 100%;
+  height: 80vh;
   width: auto;
   background-image: url("../src/pages/images/bg_lp1.png");
   display: flex;
@@ -70,6 +74,7 @@
 
 .landingPEl {
   margin: 0 20%;
+  margin-top: 13%;
   padding: 1.5%;
   background-color: rgba(255, 255, 255, 0.849);
   font-size: x-large;
@@ -95,7 +100,7 @@ p {
 }
 
 .landingPageImg {
-  height: 600px;
+  height: 80vh;
   background-position: center;
   background-size: cover;
   position: relative;
