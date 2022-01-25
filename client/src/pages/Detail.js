@@ -4,6 +4,8 @@ import { Card, Button } from "react-bootstrap";
 import { useLazyQuery } from "@apollo/client";
 import { QUERY_PRODUCT } from "../utils/queries";
 
+
+
 const Detail = () => {
   const { id } = useParams();
 

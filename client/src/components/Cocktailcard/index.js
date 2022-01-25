@@ -19,10 +19,15 @@ export function Cocktailcard(props) {
           <Link to={`/products/${props._id}`}>
             <Card.Title>{props.name}</Card.Title>
           </Link>
+<<<<<<< HEAD
           <Card.Text>{props.description}</Card.Text>
           <Button onClick={addToCart} variant="primary">
             Add To Cart
           </Button>
+=======
+          <Card.Text>{props.price}</Card.Text>
+          <Button variant="primary">Add To Cart</Button>
+>>>>>>> 3479b11a16464f306aeda17de4eac9661220ed92
         </Card.Body>
       </Card>
     </Col>
