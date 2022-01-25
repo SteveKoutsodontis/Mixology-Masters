@@ -1,7 +1,7 @@
 :root {
-  --primary: #232F3E;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
+  --primary: #232f3e;
+  --secondary: #f3a847;
+  --tertiary: #b12704;
   --light: #fafafa;
   --dark: #272f32;
   --error: rgb(228, 46, 1);
@@ -12,23 +12,9 @@
 * {
   box-sizing: border-box;
 }
-.content{
-  width: auto;
-  height: auto;
-  /* background-image: url("./pages/images/MM_BG1.jpg"); */
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat-y;
-
+.nav {
+  color: red;
 }
-/* 
-.bg {
-  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).webp");
-  height: 50vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
 .footer {
   text-align: center;
@@ -36,95 +22,100 @@
   font-style: oblique;
 }
 
+.navLinks {
+  margin-left: 10%;
+}
 
-
-html,
-body {
-  /* min-height: 100%; */
+.backgroundImg {
   background-image: url("./pages/images/MM_Bg2.png");
-  background-repeat: repeat-y;
+  background-repeat: repeat;
+}
+
+.landingPage {
+  /* margin-bottom: 10%; */
+}
+
+.landingPageBtnContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
 }
 
 .landpageBtn {
+  text-align: center;
+  color: white;
+  margin-top: 10%;
+  font-size: 1000000px;
 }
 
 .landingPageImg {
-  height: auto;
+  height: 100%;
   width: auto;
+  background-image: url("../src/pages/images/bg_lp1.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.landingPageText{
-  /* color: white; */
-  font-weight: 900;
+.landingPageText {
+  margin: 0;
+  font-weight: 550;
 }
+
+.landingH1El {
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  color: #b12704;
+  background-color: #f3a84780;
+}
+
+.landingPEl {
+  margin: 0 20%;
+  padding: 1.5%;
+  background-color: rgba(255, 255, 255, 0.849);
+  font-size: x-large;
+}
+
 body {
   height: 100%;
   width: 100%;
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
   color: var(--dark);
 }
 
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
-  margin: 5px 0;
-  line-height: 1.25;
-}
-
 h1 {
-  font-size: 2.25rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1rem;
+  text-align: center;
 }
 
 p {
-  font-size: 1.1rem;
-  margin-top: 0;
-} */
+  flex-direction: column;
+  border-radius: 20 20 0 0;
+}
 
-a {
+.landingPageImg {
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.links {
   color: var(--tertiary);
   text-decoration: none;
   font-weight: bold;
-  justify-content: space-between;
-  
 }
 
-a:hover {
+/* a:hover {
   text-decoration: underline;
-}
+} */
 
 button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
   cursor: pointer;
@@ -133,12 +124,12 @@ button {
 }
 
 button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 button[disabled] {
   cursor: default;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 img {
@@ -164,7 +155,7 @@ input {
 
 input:focus {
   border: 1px solid var(--secondary);
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 .container {
@@ -186,52 +177,6 @@ input:focus {
 .flex-end {
   justify-content: flex-end;
 }
-
-.ml-auto {
-  justify-content: space-between;
-}
-
-/* .mx-1 {
-  margin-right: var(--spacing-one);
-  margin-left: var(--spacing-one);
-}
-
-.mx-2 {
-  margin-right: var(--spacing-two);
-  margin-left: var(--spacing-two);
-}
-
-.my-1 {
-  margin-top: var(--spacing-one);
-  margin-bottom: var(--spacing-one);
-}
-
-.my-2 {
-  margin-top: var(--spacing-two);
-  margin-bottom: var(--spacing-two);
-}
-
-
-
-.px-1 {
-  padding-right: var(--spacing-one);
-  padding-left: var(--spacing-one);
-}
-
-.px-2 {
-  padding-right: var(--spacing-two);
-  padding-left: var(--spacing-two);
-}
-
-.py-1 {
-  padding-top: var(--spacing-one);
-  padding-bottom: var(--spacing-one);
-}
-
-.py-2 {
-  padding-top: var(--spacing-two);
-  padding-bottom: var(--spacing-two);
-} */
 
 .card {
   width: 25%;
