@@ -21,14 +21,14 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Tin of Cookies',
+    
+      category: 'Gin',
+      name: 'Fitzgerald',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-      image: 'https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg',
-      ingredients: ["vodka", "cherry", "ice"],
-      category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+        'The Fitzgerald Cocktail is a modern take on the classic Gin Sour, without the egg whites. This simple to make and refreshing cocktail is taken to the next level by using freshly squeezed lemon juice and a premium dry gin.',
+      image: 'https://cocktaildb.com/wp-content/uploads/2021/11/Fitzgerald-Cocktail-Recipe.jpg',
+      ingredients: ['Gin, Fresh Lemon Juice, Simple Syrup, Angostura Bitters, Slice of Lemon, Ice'],
+      price: 15.00,
     },
     {
       category: "Gin",

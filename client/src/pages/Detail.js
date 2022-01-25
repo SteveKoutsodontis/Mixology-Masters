@@ -1,8 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Card, Button } from 'react-bootstrap';
 
+
+
 const Detail = () => {
+    const { id } = useParams();
+    console.log('id', id)
     return (
         <div className="col-12">
             <Button href="/Home" variant='primary'>
@@ -17,15 +21,13 @@ const Detail = () => {
                     </Card.Body>
                 </Card> 
             </div>
-            <div className='row'>
+            <div className='col-12'>
                 <Card>
                     <Card.Body>
                         <Card.Title>Did You Know?</Card.Title>
                         <Card.Text>Insert tidbit here</Card.Text>
                     </Card.Body>
                 </Card>
-                </div>
-                <div className='row'>
                 <Card>
                     <Card.Body>
                         <Card.Title>Ingredients</Card.Title>
