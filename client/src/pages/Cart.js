@@ -13,48 +13,87 @@ export const Cart = () => {
   // }
   
   return(
-<div>
-    
-  <div className= "row">
-    <div className="col-12">
-    
-
+<div className= "row">
+    <div className="col-9 cartItemsContainer">
+    <Card className="cartItem">
+        {/* <Card.Img variant="top" src={props.image} /> */}
+        <Card.Body>
+          <Card.Title>Card Title</Card.Title>
+          <Card.Text>Card text</Card.Text>
+          <Button variant="primary">remove from cart</Button>
+        </Card.Body>
+      </Card>
+      <Card className="cartItem" >
+        {/* <Card.Img variant="top" src={props.image} /> */}
+        <Card.Body>
+          <Card.Title>Card Title</Card.Title>
+          <Card.Text>Card text</Card.Text>
+          <Button variant="primary">remove from cart</Button>
+        </Card.Body>
+      </Card> 
+      <Card className="cartItem">
+        {/* <Card.Img variant="top" src={props.image} /> */}
+        <Card.Body>
+          <Card.Title>Card Title</Card.Title>
+          <Card.Text>Card text</Card.Text>
+          <Button variant="primary">remove from cart</Button>
+        </Card.Body>
+      </Card> 
+      <Card className="cartItem">
+        {/* <Card.Img variant="top" src={props.image} /> */}
+        <Card.Body>
+          <Card.Title>Card Title</Card.Title>
+          <Card.Text>Card text</Card.Text>
+          <Button variant="primary">remove from cart</Button>
+        </Card.Body>
+      </Card> 
+      <Card className="cartItem">
+        {/* <Card.Img variant="top" src={props.image} /> */}
+        <Card.Body>
+          <Card.Title>Card Title</Card.Title>
+          <Card.Text>Card text</Card.Text>
+          <Button variant="primary">remove from cart</Button>
+        </Card.Body>
+      </Card>
+      <Card className="cartItem">
+        {/* <Card.Img variant="top" src={props.image} /> */}
+        <Card.Body>
+          <Card.Title>Card Title</Card.Title>
+          <Card.Text>Card text</Card.Text>
+          <Button variant="primary">remove from cart</Button>
+        </Card.Body>
+      </Card> 
+      <Card className="cartItem">
+        {/* <Card.Img variant="top" src={props.image} /> */}
+        <Card.Body>
+          <Card.Title>Card Title</Card.Title>
+          <Card.Text>Card text</Card.Text>
+          <Button variant="primary">remove from cart</Button>
+        </Card.Body>
+      </Card> 
+      <Card className="cartItem">
+        {/* <Card.Img variant="top" src={props.image} /> */}
+        <Card.Body>
+          <Card.Title>Card Title</Card.Title>
+          <Card.Text>Card text</Card.Text>
+          <Button variant="primary" size="sm">remove from cart</Button>
+        </Card.Body>
+      </Card>
     </div>
-<Card className="text-center">
-  <Card.Body>
-    <Card.Title>Mixology Pack Selected</Card.Title>
 
-    <Card.Img></Card.Img>
-    <Card.Text>
-    <Card.Header>Items</Card.Header>
-    <Card.Img></Card.Img>
-<li className="text-center">1</li>
-<Button variant="primary">Remove From Cart</Button>
-<li className="text-center">2</li><
-  Button variant="primary">Remove From Cart</Button>
-<li className="text-center">3</li>
-<Button variant="primary">Remove From Cart</Button>
- <li className="text-center">4</li>
- <Button variant="primary">Remove From Cart</Button>
-    </Card.Text>
-    <Card.Footer></Card.Footer>
-    <Button variant="primary">Remove All From Cart</Button>
-  </Card.Body>
-</Card>
-    <div className="col-12 itemsInCart">
+    <div className="col-3">
       <div>
-      <Card.Body>
-    <Card.Title>Subtotal:</Card.Title>
-    <Card.Text>
-    <h2>Happy Drinking</h2>
-    </Card.Text>
-    
-  </Card.Body>
+      <h2>Cart Subtotal</h2>
+      <p>Cart Item</p>
+      <p>Cart Item</p>
+      <p>Cart Item</p>
+      <p>Cart Item</p>
+      <Button variant="primary">Submit Order</Button>
       </div>
     </div>
 
   </div>
-</div>
+
   );
 }
 
