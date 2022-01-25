@@ -4,6 +4,7 @@ import { Link, useHistory } from "react-router-dom";
 // import {PJloGo} from "./Nav/images/pj_logo1.png"
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 // import {Form, Button } from 'react-bootstrap';
+import logo from "../images/pj_logo1.png";
 
 
 export default function Navigation() {
@@ -17,17 +18,20 @@ export default function Navigation() {
                 <>
                     <Navbar bg="light" expand="lg">
                         <Container>
+                            <a href="/Home">
+                                <img src={logo} style={{ width: 70, marginTop: -10 }} />
+                            </a>
                             <Navbar.Brand href="/Home">Mixology Masters</Navbar.Brand>
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="ml-auto">
                                     <Link to="/Cart">Cart</Link>
-                                    <Link to= "/" className="styledLink" onClick={logout}>Logout</Link>
+                                    <Link to="/" className="styledLink" onClick={logout}>Logout</Link>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>
                     </Navbar>
-                    
+
                 </>
             )
         } else {
@@ -35,6 +39,9 @@ export default function Navigation() {
                 <>
                     <Navbar bg="light" expand="lg">
                         <Container>
+                            <a href="/Home">
+                                <img src={logo} style={{ width: 70, marginTop: -12 }} />
+                            </a>
                             <Navbar.Brand href="/Home">Mixology Masters</Navbar.Brand>
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">

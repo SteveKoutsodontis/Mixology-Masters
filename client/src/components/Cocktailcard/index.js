@@ -5,6 +5,26 @@ import Col from "react-bootstrap/Col";
 import { Link } from 'react-router-dom';
 
 
+
+
+const addToCart = () => {
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export function Cocktailcard(props) {
   console.log('props', props);
   return (
@@ -15,7 +35,7 @@ export function Cocktailcard(props) {
         <Link to={`/products/${props._id}`}>
           <Card.Title>{props.name}</Card.Title>
           </Link>
-          <Card.Text>{props.description}</Card.Text>
+          <Card.Text>{props.price}</Card.Text>
           <Button variant="primary">Add To Cart</Button>
         </Card.Body>
       </Card>
