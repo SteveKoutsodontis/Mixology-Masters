@@ -6,42 +6,35 @@ export const Cart = () => {
   
   return(
   <div className= "row">
-    <div className="col-9 cartItemsContainer">
-    <Card>
+    <div className="col-10 cartItemsContainer">
+     <Card>
+        {/* <Card.Img  variant="top" src={props.image} /> */}
+        <Card.Body>
+          <Card.Title>Mixology Pack Selected</Card.Title>
+          <Card.Text>Card text</Card.Text>
+          <Button  variant="primary">remove from cart</Button>
+        </Card.Body>
+      </Card> <Card>
         {/* <Card.Img variant="top" src={props.image} /> */}
+        <Card.Body>
+          <Card.Title>Zoom Background Selected</Card.Title>
+          <Card.Text>Card text</Card.Text>
+          <Button  variant="primary">remove from cart</Button>
+        </Card.Body>
+      </Card> <Card>
+        {/* <Card.Img  variant="top" src={props.image} /> */}
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
           <Card.Text>Card text</Card.Text>
-          <Button variant="primary">remove from cart</Button>
+          <Button  variant="primary">remove from cart</Button>
         </Card.Body>
       </Card>
       <Card>
-        {/* <Card.Img variant="top" src={props.image} /> */}
+        {/* <Card.Img  variant="top" src={props.image} /> */}
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
           <Card.Text>Card text</Card.Text>
-          <Button variant="primary">remove from cart</Button>
-        </Card.Body>
-      </Card> <Card>
-        {/* <Card.Img variant="top" src={props.image} /> */}
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>Card text</Card.Text>
-          <Button variant="primary">remove from cart</Button>
-        </Card.Body>
-      </Card> <Card>
-        {/* <Card.Img variant="top" src={props.image} /> */}
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>Card text</Card.Text>
-          <Button variant="primary">remove from cart</Button>
-        </Card.Body>
-      </Card> <Card>
-        {/* <Card.Img variant="top" src={props.image} /> */}
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>Card text</Card.Text>
-          <Button variant="primary">remove from cart</Button>
+          <Button  variant="primary">remove from cart</Button>
         </Card.Body>
       </Card>
     </div>
@@ -49,10 +42,11 @@ export const Cart = () => {
     <div className="col-3">
       <div>
       <h2>Cart Subtotal</h2>
-      <p>Cart Item</p>
-      <p>Cart Item</p>
-      <p>Cart Item</p>
-      <p>Cart Item</p>
+      
+      <p>Cart Item</p><Button  variant="primary">remove from cart</Button>
+      <p>Cart Item</p><Button  variant="primary">remove from cart</Button>
+      <p>Cart Item</p><Button  variant="primary">remove from cart</Button>
+      <p>Cart Item</p><Button  variant="primary">remove from cart</Button>
      
       </div>
     </div>
