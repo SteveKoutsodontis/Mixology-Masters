@@ -28,7 +28,7 @@ console.log({id});
       <Button href="/Home" variant="primary">
         Back to home
       </Button>
-      <div className="row">
+      {/* <div className="row">
         <Card>
           <Card.Body>
             <Card.Title>Name of Cocktail</Card.Title>
@@ -40,7 +40,7 @@ console.log({id});
             <Card.Text>Price:</Card.Text>
           </Card.Body>
         </Card>
-      </div>
+      </div> */}
 
       {data ? (
         <div>
@@ -48,6 +48,11 @@ console.log({id});
             <Card>
               <Card.Body>
                 <Card.Title>{data.product.name}</Card.Title>
+                <Card.Img
+              src={
+                data.product.image
+              }
+            ></Card.Img>
                 <Card.Text>{data.product.description}</Card.Text>
               </Card.Body>
             </Card>
