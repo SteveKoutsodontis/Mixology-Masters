@@ -3,56 +3,58 @@ import { Card,Button } from "react-bootstrap";
 
 
 export const Cart = () => {
+  // const { loading, data } = useQuery(QUERY_COCKTAILS);
+  // const cocktails = data?.products || [];
+  // console.log("loading", loading);
+  // console.log("data", data);
+  // console.log("cocktails: ", cocktails);
+  // if (cocktails.length > 0) {
+  //   console.log("#1: ", cocktails[0].image);
+  // }
   
   return(
-  <div className= "row backgroundImg">
-    <div className="col-10 cartItemsContainer">
-     <Card>
-        {/* <Card.Img  variant="top" src={props.image} /> */}
-        <Card.Body>
-          <Card.Title>Mixology Pack Selected</Card.Title>
-          <Card.Text>Card text</Card.Text>
-          <Button  variant="primary">remove from cart</Button>
-        </Card.Body>
-      </Card> <Card>
-        {/* <Card.Img variant="top" src={props.image} /> */}
-        <Card.Body>
-          <Card.Title>Zoom Background Selected</Card.Title>
-          <Card.Text>Card text</Card.Text>
-          <Button  variant="primary">remove from cart</Button>
-        </Card.Body>
-      </Card> <Card>
-        {/* <Card.Img  variant="top" src={props.image} /> */}
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>Card text</Card.Text>
-          <Button  variant="primary">remove from cart</Button>
-        </Card.Body>
-      </Card>
-      <Card>
-        {/* <Card.Img  variant="top" src={props.image} /> */}
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>Card text</Card.Text>
-          <Button  variant="primary">remove from cart</Button>
-        </Card.Body>
-      </Card>
-    </div>
+<div>
+    
+  <div className= "row">
+    <div className="col-12">
+    
 
-    <div className="col-3">
+    </div>
+<Card className="text-center">
+  <Card.Body>
+    <Card.Title>Mixology Pack Selected</Card.Title>
+
+    <Card.Img></Card.Img>
+    <Card.Text>
+    <Card.Header>Items</Card.Header>
+    <Card.Img></Card.Img>
+<li className="text-center">1</li>
+<Button variant="primary">Remove From Cart</Button>
+<li className="text-center">2</li><
+  Button variant="primary">Remove From Cart</Button>
+<li className="text-center">3</li>
+<Button variant="primary">Remove From Cart</Button>
+ <li className="text-center">4</li>
+ <Button variant="primary">Remove From Cart</Button>
+    </Card.Text>
+    <Card.Footer></Card.Footer>
+    <Button variant="primary">Remove All From Cart</Button>
+  </Card.Body>
+</Card>
+    <div className="col-12 itemsInCart">
       <div>
-      <h2>Cart Subtotal</h2>
-      
-      <p>Cart Item</p><Button  variant="primary">remove from cart</Button>
-      <p>Cart Item</p><Button  variant="primary">remove from cart</Button>
-      <p>Cart Item</p><Button  variant="primary">remove from cart</Button>
-      <p>Cart Item</p><Button  variant="primary">remove from cart</Button>
-     
+      <Card.Body>
+    <Card.Title>Subtotal:</Card.Title>
+    <Card.Text>
+    <h2>Happy Drinking</h2>
+    </Card.Text>
+    
+  </Card.Body>
       </div>
     </div>
 
   </div>
-
+</div>
   );
 }
 

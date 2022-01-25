@@ -159,7 +159,7 @@ input:focus {
 }
 
 .container {
-  width: 85%;
+  width: 100%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -192,13 +192,21 @@ input:focus {
   color: red;
 }
 
-.cartItemsContainer {
+.backgroundWhite {
+  background: white;
+}
+.cart-cartItems{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: center;
 }
-
-@media screen and (max-width: 768px) {
+.col-12{
+  align-items: center
+}
+.itemsInCart{
+  align-items: center
+}
+@media screen and (max-width: 1000px) {
   .card {
     width: 100%;
   }

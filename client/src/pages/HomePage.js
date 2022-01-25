@@ -14,9 +14,7 @@ export const Home = () => {
   console.log("loading", loading);
   console.log("data", data);
   console.log("cocktails: ", cocktails);
-  if (cocktails.length > 0) {
-    console.log("#1: ", cocktails[0].image);
-  }
+
 
   return (
     <div className="homePage text-center backgroundImg">
