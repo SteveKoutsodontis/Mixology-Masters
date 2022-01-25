@@ -6,6 +6,25 @@ import { Link } from 'react-router-dom';
 
 
 
+
+const addToCart = () => {
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export function Cocktailcard(props) {
   console.log('props', props);
 
