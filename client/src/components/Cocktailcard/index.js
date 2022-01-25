@@ -3,12 +3,14 @@ import { Card, Button } from "react-bootstrap";
 import Router from "react-router-dom";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
-
-const addToCart = () => {};
+import Auth from '../../utils/auth';
 
 export function Cocktailcard(props) {
 
-  const addToCart = () => {};
+  const addToCart = () => {
+
+
+  };
 
   return (
     <Col md={3}>
@@ -21,6 +23,14 @@ export function Cocktailcard(props) {
           </Link>
 
           <Card.Text>{props.price}</Card.Text>
+          {/* Check to see if the user is logged in. If so render a button to Add to Cart */}
+          {Auth.loggedIn() ? (
+            <Button onClick={addToCart} variant="primary" >
+              Add To Cart
+            </Button>
+          ) : (
+            <span>(log in to add to cart)</span>
+          )}
           <Button onClick={addToCart} variant="primary">
             Add To Cart
           </Button>
