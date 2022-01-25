@@ -250,11 +250,22 @@ input:focus {
 .backgroundWhite {
   background: white;
 }
-.cart-cartItems{
+
+.cartItemsContainer {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cartItem {
+margin: 1% 2%;
+}
+/* .cart-cartItems{
   display: flex;
   flex-direction: row;
   flex-wrap: center;
-}
+} */
 .col-12{
   align-items: center
 }
