@@ -30,20 +30,36 @@
   background-size: cover;
 } */
 
+.footer {
+  text-align: center;
+  font: xx-large;
+  font-style: oblique;
+}
+
+
 
 html,
 body {
   /* min-height: 100%; */
   background-image: url("./pages/images/MM_Bg2.png");
-  background-repeat: repeat;
+  background-repeat: repeat-y;
 }
+
+.landpageBtn {
+}
+
+.landingPageImg {
+  height: auto;
+  width: auto;
+}
+
 .landingPageText{
   /* color: white; */
   font-weight: 900;
 }
 body {
-  margin: 0;
-  padding: 0;
+  height: 100%;
+  width: 100%;
   font-family: 'Karla', sans-serif;
   font-weight: 400;
   line-height: 1.5;
@@ -51,7 +67,7 @@ body {
   color: var(--dark);
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -90,24 +106,18 @@ h6 {
 p {
   font-size: 1.1rem;
   margin-top: 0;
-}
+} */
 
 a {
   color: var(--tertiary);
   text-decoration: none;
   font-weight: bold;
+  justify-content: space-between;
+  
 }
 
 a:hover {
   text-decoration: underline;
-}
-
-header {
-  background: var(--primary);
-}
-
-header a {
-  color: var(--light);
 }
 
 button {
@@ -177,7 +187,11 @@ input:focus {
   justify-content: flex-end;
 }
 
-.mx-1 {
+.ml-auto {
+  justify-content: space-between;
+}
+
+/* .mx-1 {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
 }
@@ -197,9 +211,7 @@ input:focus {
   margin-bottom: var(--spacing-two);
 }
 
-.ml-auto {
-  justify-content: space-between;
-}
+
 
 .px-1 {
   padding-right: var(--spacing-one);
@@ -219,7 +231,7 @@ input:focus {
 .py-2 {
   padding-top: var(--spacing-two);
   padding-bottom: var(--spacing-two);
-}
+} */
 
 .card {
   width: 25%;
