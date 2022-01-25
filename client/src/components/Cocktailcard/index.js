@@ -13,7 +13,7 @@ export function Cocktailcard(props) {
   };
 
   return (
-    <Col md={3}>
+    <Col md={3} className="mb-4" >
       {/* <Card border="secondary" mb-3 style={{ width: "12rem" }}> */}
       <Card border="secondary" style={{ width: "12rem" }}>
         <Card.Img variant="top" src={props.image} />

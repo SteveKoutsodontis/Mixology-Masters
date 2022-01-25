@@ -90,7 +90,16 @@ const resolvers = {
   Mutation: {
     addCartItem: async (parent, args) => {
       const cartItem = await CartItem.create(args);
+      console.log(context);
+      if (context.user) {
+        const order = new Order({ products });
 
+        await User.findByIdAndUpdate(context.user._id, { $push: { orders: order } });
+
+        return order;
+      }
+
+      throw new AuthenticationError('Not logged in');
       return cartItem;
     },
     addUser: async (parent, args) => {
