@@ -16,7 +16,7 @@ const Detail = () => {
                 <Card>
                     <Card.Body>
                         <Card.Title>Name of Cocktail</Card.Title>
-                        <Card.Img></Card.Img>
+                        <Card.Img src={"https://www.thecocktaildb.com/images/media/drink/ck6d0p1504388696.jpg"}></Card.Img>
                         <Card.Text>Price:</Card.Text>
                     </Card.Body>
                 </Card> 
