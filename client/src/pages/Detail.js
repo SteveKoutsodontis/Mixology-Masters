@@ -5,12 +5,9 @@ import { useLazyQuery } from "@apollo/client";
 import { QUERY_PRODUCT } from "../utils/queries";
 
 
-
 const Detail = () => {
   const { id } = useParams();
-console.log({id});
   const [getProduct, { loading, error, data }] = useLazyQuery(QUERY_PRODUCT);
-  console.log("data", data);
 
   useEffect(() => {
     console.log("useEffect Detail");
@@ -76,3 +73,4 @@ console.log({id});
 };
 
 export default Detail;
+

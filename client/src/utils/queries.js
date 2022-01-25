@@ -16,7 +16,7 @@ const QUERY_COCKTAILS = gql`
   }
 `;
 
-export const QUERY_PRODUCT = gql`
+const QUERY_PRODUCT = gql`
   query getProduct($product: ID!) {
     product(_id: $product) {
       _id
@@ -90,5 +90,5 @@ const QUERY_USER = gql`
   }
 `;
 
-export { QUERY_COCKTAILS, QUERY_CHECKOUT, QUERY_CATEGORIES, QUERY_USER, QUERY_CARTITEMS}
+export { QUERY_COCKTAILS, QUERY_CHECKOUT, QUERY_CATEGORIES, QUERY_USER, QUERY_CARTITEMS, QUERY_PRODUCT}
 
