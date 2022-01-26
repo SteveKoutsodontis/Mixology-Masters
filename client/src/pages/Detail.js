@@ -43,13 +43,9 @@ const Detail = () => {
           <div className="row backgroundImg">
             {/* <Card>
                 <Card.Title>{data.product.name}</Card.Title>
-<<<<<<< HEAD
-                <Card.Img src={data.product.image}></Card.Img>
-=======
                 <Card.Title>Did You Know?</Card.Title>
                 <Card.Img src={data.product.image}></Card.Img>
               <Card.Body>
->>>>>>> 847dbaf895b6d5bb264372228255116fd24a3212
                 <Card.Text>{data.product.description}</Card.Text>
                 <Card.Title>Price</Card.Title>
                 <Card.Text>{data.product.price}</Card.Text>

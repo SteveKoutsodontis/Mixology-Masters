@@ -12,9 +12,6 @@ export const Home = () => {
   const { loading, data } = useQuery(QUERY_COCKTAILS);
   const cocktails = data?.products || [];
 
-  console.log("cocktails: ", cocktails);
-
-
   return (
     <div className="homePage text-center backgroundImg">
       <h2>
