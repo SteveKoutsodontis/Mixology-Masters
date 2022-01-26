@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 const bcrypt = require('bcrypt');
 const Order = require('./Order');
-const CartItem = require('./CartItem');
+// const CartItem = require('./CartItem');
 
 const userSchema = new Schema({
   firstName: {
@@ -26,7 +26,7 @@ const userSchema = new Schema({
     required: true,
     minlength: 5
   },
-  cartItems:[CartItem.schema],
+  // cartItems:[CartItem.schema],
   orders: [Order.schema] //subdocument
 });
 
