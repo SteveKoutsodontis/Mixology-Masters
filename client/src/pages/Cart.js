@@ -13,6 +13,7 @@ export const Cart = () => {
   // }
   
   return(
+    <div className= "backgroundImg cartBgImg">
 <div className= "row">
 <Card.Header className= "center"><h1>Cart</h1></Card.Header>
     <div className="col-9 cartItemsContainer">
@@ -93,6 +94,7 @@ export const Cart = () => {
       </div>
     </div>
 <Card.Footer className="center"><h1>Drink Responsibly!!!</h1></Card.Footer>
+  </div>
   </div>
 
   );
