@@ -61,9 +61,15 @@
   font-size: 1000000px;
 }
 
+.cartList {
+  background-color: #fafafa ;
+}
+
 .cartBgImg {
   height: 80vh;
   width: auto;
+  background-repeat: repeat;
+
 }
 
 .landingPageImg {
@@ -121,7 +127,7 @@ p {
 }
 
 .links {
-  color: var(--tertiary);
+  color: #007bff;
   text-decoration: none;
   font-weight: bold;
 }
@@ -212,8 +218,9 @@ input:focus {
 }
 
 .backgroundWhite {
-  background: white;
+  background: rgba(89, 142, 228, 0.466);
   margin: 0 40%;
+  padding-left: 140px ;
 }
 
 .cartItemsContainer {

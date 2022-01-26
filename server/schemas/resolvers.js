@@ -110,7 +110,7 @@ const resolvers = {
       if (context.user) {
 
         // const cartItem = await CartItem.create(args);
-        const user = await User.findByIdAndUpdate(context.user._id, { $push: { cartItems: args.product} }).populate("cartItems");
+        const user = await User.findByIdAndUpdate(context.user._id, { $push: { cartItems: args.product} });
 
         return user;
        }
