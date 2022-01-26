@@ -46,6 +46,11 @@
   background-repeat: repeat;
 }
 
+/* .backgroundImg cartBgImg{
+  background-image: url("./pages/images/MM_Bg2.png");
+  background-repeat: repeat;
+} */
+
 
 
 .landingPageBtnContainer {
@@ -62,8 +67,14 @@
 }
 
 .cartList {
-  background-color: #fafafa ;
+  background: rgba(200, 54, 54, 0.5);
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: right;
+  margin-bottom: 7rem;
+
 }
+
 
 .cartBgImg {
   height: 80vh;
