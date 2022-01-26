@@ -18,7 +18,7 @@ export function Cocktailcard(props) {
       const cartItem = await addCartItem({
         variables: { product: props._id, quantity: 1 },
       });
-      console.log("cItem", cartItem);
+      alert(`Added to cart`);
     } catch (err) {
       console.log(err);
     }
