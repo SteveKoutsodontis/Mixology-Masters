@@ -14,10 +14,11 @@ import Signup from './pages/Signup';
 import Navigation from './components/Navigation/index.js';
 import Footer from './components/Footer'
 import Cart from './pages/Cart';
-import Detail from './pages/Detail'
+import Detail from './pages/Detail';
+import SuccessPage from './pages/SuccessPage';
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import { StoreProvider } from './utils/GlobalState';
 // import Success from './pages/Success/index.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -60,6 +61,9 @@ function App() {
               </Route>
               <Route exact path="/Cart">
                   <Cart/>
+                </Route>
+                <Route exact path="/Success">
+                  <SuccessPage/>
                 </Route>
               {/* <Route exact path="/success" component={Success} /> */}
               <Route exact path="/products/:id" component={Detail} />

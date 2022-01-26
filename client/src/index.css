@@ -22,6 +22,15 @@
   font-style: oblique;
 }
 
+.funFont{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.success{
+  color:rgb(228, 46, 1);
+  font-family: cursive;
+}
+
 .navLinks {
   margin-left: 10%;
 }
