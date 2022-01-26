@@ -5,6 +5,21 @@ import { useQuery } from "@apollo/client";
 import { Link } from "react-router-dom";
 
 export const Cart = () => {
+//   const [removeCartItem, { error }] = useMutation(REMOVE_CART_ITEM);
+
+//   const removefromCart = async (event) => {
+//     event.preventDefault();
+// console.log ({props});
+//     try {
+//       const cartItem = await removeCartItem({
+//         variables: { product: props._id},
+//       });
+//       alert(`${props.name} removed from cart!`);
+//     } catch (err) {
+//       console.log(err);
+//     }
+//   };
+
   
   const { loading, data } = useQuery(QUERY_USER);
 
@@ -49,8 +64,8 @@ export const Cart = () => {
 
 
   return (
-    <div className="backgroundImg cartBgImg">
-      <div className="row">
+    <div className="cartBgImg">
+      <div className="row backgroundImg">
         <Card.Header className="center">
           <h1>Cart</h1>
         </Card.Header>
@@ -58,7 +73,8 @@ export const Cart = () => {
           {!loading ? renderCards(): <h2>Loading.....</h2>}
         </div>
 
-        <div className="col-3 cartList">
+        <div className="col-3 cartList ">
+          <div>
           <div>
           {!loading ? renderList(): <h2>Loading.....</h2>}
           
@@ -67,11 +83,13 @@ export const Cart = () => {
             <h3>Total: {total}</h3>
             <Link to="/Success"><Button> Checkout</Button></Link>
           </Card.Header>
+          </div>
         </div>
         {/* <Card.Footer className="center">
           <h1>Drink Responsibly!!!</h1>
         </Card.Footer> */}
       </div>
+      <Footer />
     </div>
   );
 };
