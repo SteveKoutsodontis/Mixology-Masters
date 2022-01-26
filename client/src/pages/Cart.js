@@ -99,7 +99,7 @@ export const Cart = () => {
       <Button variant="primary">Submit Order</Button>
       </div>
     </div>
-<Card.Footer className="center"><h1>Drink Responsibly!!!</h1></Card.Footer>
+
   </div>
   </div>
 
