@@ -13,6 +13,7 @@ export const Cart = () => {
   // }
   
   return(
+    <div className= "backgroundImg cartBgImg">
 <div className= "row">
     <div className="col-9 cartItemsContainer">
     <Card className="cartItem">
@@ -92,6 +93,7 @@ export const Cart = () => {
       </div>
     </div>
 
+  </div>
   </div>
 
   );

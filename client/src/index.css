@@ -35,9 +35,7 @@
   background-repeat: repeat;
 }
 
-.landingPage {
-  /* margin-bottom: 10%; */
-}
+
 
 .landingPageBtnContainer {
   display: flex;
@@ -50,6 +48,11 @@
   color: white;
   margin-top: 10%;
   font-size: 1000000px;
+}
+
+.cartBgImg {
+  height: 80vh;
+  width: auto;
 }
 
 .landingPageImg {
