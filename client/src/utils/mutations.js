@@ -12,13 +12,11 @@ export const LOGIN = gql`
 `;
 
 export const ADD_CART_ITEM = gql`
-mutation addCartItem($product: ID!, $quantity: Int) {
-  addCartItem(product: $product, quantity: $quantity) {
-     product 
-  }
- 
+mutation addCartItem($product: ID!) {
+  addCartItem(product: $product) {
+     _id
+   }
 }
-
 `;
 
 export const ADD_ORDER = gql`
