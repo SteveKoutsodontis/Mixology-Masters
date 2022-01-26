@@ -26,7 +26,7 @@ export default function Navigation() {
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="ml-auto">
                                     <Link className="ml-5 links" to="/Cart">Cart</Link>
-                                    <Link className="ml-5 links styledLink" to="/" onClick={logout}>Logout</Link>
+                                    <Link className="ml-5 links styledLink" to="/Home" onClick={logout}>Logout</Link>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>
