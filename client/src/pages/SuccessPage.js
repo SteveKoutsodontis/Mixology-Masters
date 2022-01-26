@@ -17,7 +17,7 @@ function SuccessPage() {
       
         <h1 className="success">Success!</h1>
         <p className="funFont text-center">
-          Your order has been successfully placed! Please give us 3-5 business days for your order to be processed and shipped!
+          Your order has been successfully placed! Please give us 3-5 business days for your order to be processed and shipped! You will now be redirected to the homepage. 
         </p>
      
     </div>

@@ -13,10 +13,7 @@ export default function Navigation() {
         Auth.logout();
     };
 
-    const refresh = (event) => {
-        event.preventDefault();
-        
-    };
+
 
     function showLogout() {
         if (Auth.loggedIn()) {
@@ -31,7 +28,7 @@ export default function Navigation() {
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="ml-auto">
-                                    <Link className="ml-5 links" to="/Cart" onClick={refresh} >Cart</Link>
+                                    <Link className="ml-5 links" to="/Cart"  >Cart</Link>
                                     <Link className="ml-5 links styledLink" to="/" onClick={logout}>Logout</Link>
                                 </Nav>
                             </Navbar.Collapse>

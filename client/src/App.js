@@ -44,7 +44,7 @@ function App() {
     <ApolloProvider client={client}>
       <div>
         <div className="content">
-          <Router>
+          <Router forceRefresh>
             <Navigation />
             <Switch>
             <Route exact path="/">
