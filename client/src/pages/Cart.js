@@ -1,13 +1,18 @@
 import React from "react";
 import { Card,Button } from "react-bootstrap";
-
+import { QUERY_USER } from "../utils/queries";
+import { useQuery } from "@apollo/client";
 
 export const Cart = () => {
-  // const { loading, data } = useQuery(QUERY_COCKTAILS);
-  // const cocktails = data?.products || [];
-  // console.log("loading", loading);
+ const { loading, data } = useQuery(QUERY_USER);
+ console.log(data)
+ const firstName = data?.firstName || [];
+ if(!loading){
+   console.log("firstname",firstName)
+ }
+  // const cartItems = data.cartItems || [];
   // console.log("data", data);
-  // console.log("cocktails: ", cocktails);
+  // console.log("cartItems: ", {cartItems});
   // if (cocktails.length > 0) {
   //   console.log("#1: ", cocktails[0].image);
   // }
@@ -15,6 +20,7 @@ export const Cart = () => {
   return(
     <div className= "backgroundImg cartBgImg">
 <div className= "row">
+
 <Card.Header className= "center"><h1>Cart</h1></Card.Header>
     <div className="col-9 cartItemsContainer">
     <Card className="cartItem">

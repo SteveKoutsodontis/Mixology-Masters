@@ -27,16 +27,28 @@ const resolvers = {
     },
     user: async (parent, args, context) => {
       if (context.user) {
-        const user = await User.findById(context.user._id).populate({
-          path: 'cartItems.products',
-          populate: 'category'
-        });
+        const user = await User.findById(context.user._id).populate("cartItems");
 
         return user;
       }
 
       throw new AuthenticationError('Not logged in');
     },
+    // user: async (parent, args, context) => {
+    //   if (context.user) {
+    //     const user = await User.findById(context.user._id).populate({
+    //       path: 'cartItems.products',
+    //       populate: 'category'
+    //     });
+
+    //     return user;
+    //   }
+
+    //   throw new AuthenticationError('Not logged in');
+    // },
+      
+    
+
     order: async (parent, { _id }, context) => {
       if (context.user) {
         const user = await User.findById(context.user._id).populate({
@@ -97,10 +109,10 @@ const resolvers = {
 
       if (context.user) {
 
-        const cartItem = await CartItem.create(args);
-        await User.findByIdAndUpdate(context.user._id, { $push: { cartItems: cartItem } });
+        // const cartItem = await CartItem.create(args);
+        const user = await User.findByIdAndUpdate(context.user._id, { $push: { cartItems: args.product} }).populate("cartItems");
 
-        return cartItem;
+        return user;
        }
 
       throw new AuthenticationError('Not logged in');
