@@ -14,8 +14,8 @@ const LandingPage = () => {
         <p className='landingPageText landingPEl'>"There's always a reason to toast! From weddings to team building events to fun cookouts with your friends, there's always occasion to imbibe your favorite drinks.  Set a date to learn how to make the perfect cocktail with a master mixologist.  Select your cocktail kit inside...."</p>
       </div>
       <div className='landingPageBtnContainer'>
-        <Button className='landpageBtn' variant="success">
-          <Link to="/Home">
+        <Button className='landpageBtn' variant="success" size="lg">
+          <Link className='landPagebtnLink' to="/Home">
           Pick your poison!
           </Link>
         </Button>
