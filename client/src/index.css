@@ -61,6 +61,10 @@
   font-size: 1000000px;
 }
 
+.cartList {
+  background-color: #fafafa ;
+}
+
 .cartBgImg {
   height: 80vh;
   width: auto;

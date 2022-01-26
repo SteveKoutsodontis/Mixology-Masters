@@ -13,12 +13,12 @@ export function Cocktailcard(props) {
 
   const addToCart = async (event) => {
     event.preventDefault();
-
+console.log ({props});
     try {
       const cartItem = await addCartItem({
-        variables: { product: props._id, quantity: 1 },
+        variables: { product: props._id},
       });
-      alert(`Added to cart`);
+      alert(`${props.name} added to cart!`);
     } catch (err) {
       console.log(err);
     }

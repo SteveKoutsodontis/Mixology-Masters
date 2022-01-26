@@ -69,10 +69,10 @@ function App() {
               <Route exact path="/products/:id" component={Detail} />
               {/* <Route component={NoMatch} /> */}
             </Switch>
+            <Footer />
           </Router>
         </div>
       </div>
-      <Footer />
 
     </ApolloProvider>
   );

@@ -48,7 +48,6 @@ export default function Navigation() {
                                 <Nav className="ml-auto">
                                     <Link className="ml-5 links" to="/login">Login</Link>
                                     <Link className="ml-5 links" to="/signup">Signup</Link>
-                                    <Link className="ml-5 links" to="/Cart">Cart</Link>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>
