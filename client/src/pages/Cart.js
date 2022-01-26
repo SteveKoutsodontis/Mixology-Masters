@@ -1,5 +1,5 @@
 import React from "react";
-import { Card,Button } from "react-bootstrap";
+import { Card,Button,Link } from "react-bootstrap";
 import { QUERY_USER } from "../utils/queries";
 import { useQuery } from "@apollo/client";
 
@@ -24,6 +24,7 @@ export const Cart = () => {
 <Card.Header className= "center"><h1>Cart</h1></Card.Header>
     <div className="col-9 cartItemsContainer">
     <Card className="cartItem">
+      
         {/* <Card.Img variant="top" src={props.image} /> */}
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
@@ -96,7 +97,7 @@ export const Cart = () => {
       <p>Cart Item</p>
       <p>Cart Item</p>
       <p>Cart Item</p>
-      <Button variant="primary">Submit Order</Button>
+      <Button><Link to="/Success">Checkout</Link></Button>
       </div>
     </div>
 
