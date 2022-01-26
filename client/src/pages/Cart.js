@@ -2,10 +2,7 @@ import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { QUERY_USER } from "../utils/queries";
 import { useQuery } from "@apollo/client";
-import {Link } from "react-router-dom";
-import Footer from "../components/Footer"
-// import { REMOVE_CART_ITEM } from "../utils/mutations";
-// import { useMutation} from "@apollo/client";
+import { Link } from "react-router-dom";
 
 export const Cart = () => {
 //   const [removeCartItem, { error }] = useMutation(REMOVE_CART_ITEM);
