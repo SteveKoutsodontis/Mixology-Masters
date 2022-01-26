@@ -40,8 +40,12 @@
   
   Steve Koutsodontis:
   https://github.com/SteveKoutsodontis
+
   Sulaimon Fedai:
   https://github.com/sfedai
+
+  Nat Epstein:
+  https://github.com/natpitt2393
 
   ## Launch
   https://github.com/SteveKoutsodontis/Mixology-Masters
