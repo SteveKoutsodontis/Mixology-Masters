@@ -44,36 +44,46 @@ const Detail = () => {
 
       {data ? (
         <div>
-          <div className="row">
-            <Card>
-              <Card.Body>
+          <div className="row backgroundImg">
+            {/* <Card>
                 <Card.Title>{data.product.name}</Card.Title>
-                <Card.Img src={data.product.image}></Card.Img>
                 <Card.Title>Did You Know?</Card.Title>
+                <Card.Img src={data.product.image}></Card.Img>
+              <Card.Body>
                 <Card.Text>{data.product.description}</Card.Text>
                 <Card.Title>Price</Card.Title>
                 <Card.Text>{data.product.price}</Card.Text>
               </Card.Body>
-            </Card>
-          </div>
-          <div className="row">
-            <Card>
+            </Card> */}
+            <Card style={{ width: '40rem', marginLeft: "auto", marginRight: "auto", margin: "30px auto"}}>
+              <Card.Img variant="top" src={data.product.image}></Card.Img>
               <Card.Body>
+                <Card.Title style={{textDecoration: "underline", fontSize: "40px"}}>{data.product.name}</Card.Title>
+                <Card.Title>Did You Know?</Card.Title>
+                <Card.Text>{data.product.description}</Card.Text>
+                <Card.Title>Price</Card.Title>
+                <Card.Text>{data.product.price}</Card.Text>
                 <Card.Title>Ingredients</Card.Title>
                 {data.product.ingredients.map((ingredient) => (
                   <Card.Text key={ingredient}>{ingredient}</Card.Text>
                 ))}
               </Card.Body>
             </Card>
+          {/* </div>
+          <div className="row"> */}
+            {/* <Card>
+              <Card.Body>
+              </Card.Body>
+            </Card> */}
           </div>
         </div>
       ) : (
         <div>
           <Card>
             <Card.Body>
-            <Card.Text>Loading.....</Card.Text>
+              <Card.Text>Loading.....</Card.Text>
             </Card.Body>
-            </Card>
+          </Card>
         </div>
       )}
     </div>
