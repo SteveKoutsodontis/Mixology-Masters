@@ -57,8 +57,8 @@ const QUERY_USER = gql`
           name
           price
           image
-        }
       }
+      
     }
   }
 `;
