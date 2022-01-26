@@ -31,7 +31,7 @@ function Login(props) {
 
   return (
     <div className='backgroundImg cartBgImg'>
-    <div className="container my-1 backgroundWhite">
+    <div className="backgroundWhite">
       <Link to="/signup">← Go to Signup</Link>
 
       <h2>Login</h2>
