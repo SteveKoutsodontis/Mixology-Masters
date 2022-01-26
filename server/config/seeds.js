@@ -53,7 +53,7 @@ db.once('open', async () => {
       category: categories[0]._id,
       name: "Gin Berry",
       image: "https://www.thecocktaildb.com/images/media/drink/xrbhz61504883702.jpg",
-      ingredients: ["Gin, Cranberry Juice,Lime Juice,"],
+      ingredients: ["Gin, Cranberry Juice, Lime Juice,"],
       price: 15.99,
       description: "Cranberry juice was first made in the 1600s.",
       quantity: 500
@@ -69,7 +69,7 @@ db.once('open', async () => {
   }, 
   {
       category: categories[0]._id,
-      name: "Singapore Slink",
+      name: "Singapore Sling",
       image: "https://www.thecocktaildb.com/images/media/drink/7dozeg1582578095.jpg",
       ingredients: ["Gin, Cherry Heering, Benedictine, Lemon Juice,  Orange Bitters,  Angostura Bitters,  Soda Water, Lemon slice."],
       price: 15.99,
@@ -87,7 +87,7 @@ db.once('open', async () => {
   },
   {
       category: categories[1]._id,
-      name: "Daiquri",
+      name: "Daiquiri",
       image: "https://www.thecocktaildb.com/images/media/drink/mrz9091589574515.jpg",
       ingredients: ["White Rum, bar spoons Sugar, Lime Juice, Lime slice"],
       price: 15.99,
@@ -96,18 +96,18 @@ db.once('open', async () => {
   },
   {
       category: categories[1]._id,
-      name: "Pina Conolada",
+      name: "Piña Colada",
       image: "https://www.thecocktaildb.com/images/media/drink/cpf4j51504371346.jpg",
       ingredients: ["White Rum, Pineapple Juice, Coconut Cream, Cream, Pineapple Slice, pinch of Salt"],
       price: 15.99,
-      description: "In 1978 the government declared the Pina Colada to be the official drink of Puerto Rico.",
+      description: "In 1978 the government declared the Piña Colada to be the official drink of Puerto Rico.",
       quantity: 500
   },
   {
       category: categories[1]._id,
       name: "Dark N Stormy",
       image: "https://www.thecocktaildb.com/images/media/drink/t1tn0s1504374905.jpg",
-      ingredients: ["Dark Rum, 4 Lime quarters, bar spoons Brown Sugar, splash Ginger Beer, Lime wedge"],
+      ingredients: ["Dark Rum, 4 lime quarters, bar spoons brown sugar, splash ginger beer, lime wedge"],
       price: 15.99,
       description: "This drink gained popularity through the sailing community up and down the east coast of the USA, having been brought home by various sailors who visited Bermuda.",
       quantity: 500
@@ -123,7 +123,7 @@ db.once('open', async () => {
   },
   {
       category: categories[3]._id,
-      name: "Margaritta",
+      name: "Margarita",
       image: "https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg",
       ingredients: ["Tequila, Triple Sec, Lime Juice, Simple Syrup, salt"],
       price: 15.99,
@@ -152,7 +152,7 @@ db.once('open', async () => {
       category: categories[3]._id,
       name: "Tequila Sunrise",
       image: "https://www.thecocktaildb.com/images/media/drink/quqyqp1480879103.jpg",
-      ingredients: ["Tequila,Orange Juice, dash Grenadine Syrup, Lime wedge, Orange slice"],
+      ingredients: ["Tequila, Orange Juice, dash Grenadine Syrup, Lime wedge, Orange slice"],
       price: 15.99,
       description: "Tequila Sunrise, featuring Mel Gibson, holds a score of 44% on Rotten Tomatoes.",
       quantity: 500
@@ -172,16 +172,16 @@ db.once('open', async () => {
       image: "https://www.thecocktaildb.com/images/media/drink/vsrupw1472405732.jpg",
       ingredients: ["Vodka, Coffee Liqueur, Cream, Milk, Chocolate Powder, Coffee Bean"],
       price: 15.99,
-      description: "The White Russian is the favourite drink of Jeffrey The Dude Lebowski, the main character of the 1998 film, The Big Lebowski.",
+      description: "The White Russian is the favorite drink of Jeffrey, The Dude, Lebowski, the main character of the 1998 film, The Big Lebowski.",
       quantity: 500
   },
   {
       category: categories[2]._id,
       name: "Cosmopolitan",
       image: "https://www.thecocktaildb.com/images/media/drink/kpsajh1504368362.jpg",
-      ingredients: ["Citrus Vodka,Triple Sec, Cranberry Juice, squeezed lemon, Sugar Syrup"],
+      ingredients: ["Citrus Vodka, Triple Sec, Cranberry Juice, squeezed lemon, Sugar Syrup"],
       price: 15.99,
-      description: "The Cosmopolitan gained significant popularity in the 1990s partly due to the fact that Sarah Jessica Parkers character, Carrie Bradshaw, in the hit televsion programme, Sex in the City, often ordered the drink.",
+      description: "The Cosmopolitan gained significant popularity in the 1990s partly due to the fact that Sarah Jessica Parker's character, Carrie Bradshaw, in the hit televsion program, Sex in the City, often ordered the drink.",
       quantity: 500
   },
 //   {
@@ -195,7 +195,7 @@ db.once('open', async () => {
 //   },
   {
       category: categories[2]._id,
-      name: "Espresso Maritni",
+      name: "Espresso Martini",
       image: "https://www.thecocktaildb.com/images/media/drink/n0sx531504372951.jpg",
       ingredients: ["Vanilla Vodka, Kahlúa, Double Espresso, Sugar Syrup, 3 Coffee Beans"],
       price: 15.99,
