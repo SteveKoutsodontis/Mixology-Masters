@@ -5,6 +5,7 @@ import { useQuery } from "@apollo/client";
 
 export const Cart = () => {
  const { loading, data } = useQuery(QUERY_USER);
+ console.log(data)
  const firstName = data?.firstName || [];
  if(!loading){
    console.log("firstname",firstName)
