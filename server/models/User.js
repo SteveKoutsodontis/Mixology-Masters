@@ -26,7 +26,11 @@ const userSchema = new Schema({
     required: true,
     minlength: 5
   },
-  cartItems:[CartItem.schema],
+  cartItems:[
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Product"
+    }],
   orders: [Order.schema] //subdocument
 });
 

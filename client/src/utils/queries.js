@@ -1,6 +1,6 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 const QUERY_COCKTAILS = gql`
-  query getCocktails{
+  query getCocktails {
     products {
       _id
       name
@@ -49,26 +49,13 @@ const QUERY_CATEGORIES = gql`
 const QUERY_USER = gql`
   {
     user {
+      _id
       firstName
       lastName
       cartItems {
-        _id
-        product {
-          name
-          price
-        }
-      }
-      orders {
-        _id
-        purchaseDate
-        eventDate
-        products {
           _id
           name
-          description
-        
           price
-          quantity
           image
         }
       }
@@ -76,5 +63,10 @@ const QUERY_USER = gql`
   }
 `;
 
-export { QUERY_COCKTAILS, QUERY_CHECKOUT, QUERY_CATEGORIES, QUERY_USER, QUERY_PRODUCT}
-
+export {
+  QUERY_COCKTAILS,
+  QUERY_CHECKOUT,
+  QUERY_CATEGORIES,
+  QUERY_USER,
+  QUERY_PRODUCT,
+};
