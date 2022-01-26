@@ -56,9 +56,12 @@
 
 .landpageBtn {
   text-align: center;
-  color: white;
   margin-top: 10%;
-  font-size: 1000000px;
+}
+
+.landPagebtnLink{
+  text-decoration: none;
+  color: white;
 }
 
 .cartList {
