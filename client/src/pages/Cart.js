@@ -1,110 +1,79 @@
 import React from "react";
-import { Card,Button } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import { QUERY_USER } from "../utils/queries";
 import { useQuery } from "@apollo/client";
+import {Link } from "react-router-dom";
 
 export const Cart = () => {
- const { loading, data } = useQuery(QUERY_USER);
- console.log(data)
- const firstName = data?.firstName || [];
- if(!loading){
-   console.log("firstname",firstName)
- }
-  // const cartItems = data.cartItems || [];
-  // console.log("data", data);
-  // console.log("cartItems: ", {cartItems});
-  // if (cocktails.length > 0) {
-  //   console.log("#1: ", cocktails[0].image);
-  // }
   
-  return(
-    <div className= "backgroundImg cartBgImg">
-<div className= "row">
+  const { loading, data } = useQuery(QUERY_USER);
 
-<Card.Header className= "center"><h1>Cart</h1></Card.Header>
-    <div className="col-9 cartItemsContainer">
-    <Card className="cartItem">
-        {/* <Card.Img variant="top" src={props.image} /> */}
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>Card text</Card.Text>
-          <Button variant="danger">remove from cart</Button>
-        </Card.Body>
-      </Card>
-      <Card className="cartItem" >
-        {/* <Card.Img variant="top" src={props.image} /> */}
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>Card text</Card.Text>
-          <Button variant="danger">remove from cart</Button>
-        </Card.Body>
-      </Card> 
-      <Card className="cartItem">
-        {/* <Card.Img variant="top" src={props.image} /> */}
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>Card text</Card.Text>
-          <Button variant="danger">remove from cart</Button>
-        </Card.Body>
-      </Card> 
-      <Card className="cartItem">
-        {/* <Card.Img variant="top" src={props.image} /> */}
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>Card text</Card.Text>
-          <Button variant="danger">remove from cart</Button>
-        </Card.Body>
-      </Card> 
-      <Card className="cartItem">
-        {/* <Card.Img variant="top" src={props.image} /> */}
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>Card text</Card.Text>
-          <Button variant="danger">remove from cart</Button>
-        </Card.Body>
-      </Card>
-      <Card className="cartItem">
-        {/* <Card.Img variant="top" src={props.image} /> */}
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>Card text</Card.Text>
-          <Button variant="danger">remove from cart</Button>
-        </Card.Body>
-      </Card> 
-      <Card className="cartItem">
-        {/* <Card.Img variant="top" src={props.image} /> */}
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>Card text</Card.Text>
-          <Button variant="danger">remove from cart</Button>
-        </Card.Body>
-      </Card> 
-      <Card className="cartItem">
-        {/* <Card.Img variant="top" src={props.image} /> */}
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>Card text</Card.Text>
-          <Button variant="danger" size="sm">remove from cart</Button>
-        </Card.Body>
-      </Card>
-    </div>
+  const cartItems = data?.user.cartItems;
 
-    <div className="col-3">
-  <Card.Header className= "center"><h1>Cart Total</h1></Card.Header>
-      <div>
-      <p>Cart Item</p>
-      <p>Cart Item</p>
-      <p>Cart Item</p>
-      <p>Cart Item</p>
-      <Button variant="primary">Submit Order</Button>
+  function renderCards() {
+    let itemsOfCart = []
+    for(let item of cartItems){
+       itemsOfCart.push (
+       <>
+        <Card className="cartItem">
+          <Card.Img variant="top" src={item.image} />
+          <Card.Body>
+            <Card.Title>{item.name}</Card.Title>
+            <Card.Text>{"$" + item.price}</Card.Text>
+            <Button variant="danger">Remove from cart</Button>
+          </Card.Body>
+        </Card>
+        </>
+       )
+    };
+    return itemsOfCart
+  }
+
+  let total=0;
+
+  function renderList() {
+    let listItems = []
+    for(let item of cartItems){
+      total+= item.price
+      listItems.push (
+        <>
+       <h3>{item.name}</h3>
+       <p>{"$" + item.price}</p>
+       <hr></hr>
+        </>
+       )
+      };
+  total = parseFloat(total).toFixed(2)
+    return listItems
+  }
+
+
+  return (
+    <div className="backgroundImg cartBgImg">
+      <div className="row">
+        <Card.Header className="center">
+          <h1>Cart</h1>
+        </Card.Header>
+        <div className="col-9 cartItemsContainer">
+          {!loading ? renderCards(): <h2>Loading.....</h2>}
+        </div>
+
+        <div className="col-3 cartList">
+          <div>
+          {!loading ? renderList(): <h2>Loading.....</h2>}
+          
+          </div>
+          <Card.Header className="center">
+            <h3>Total: {total}</h3>
+            <Link to="/Success"><Button> Checkout</Button></Link>
+          </Card.Header>
+        </div>
+        {/* <Card.Footer className="center">
+          <h1>Drink Responsibly!!!</h1>
+        </Card.Footer> */}
       </div>
     </div>
-
-  </div>
-  </div>
-
   );
-}
-
+};
 
 export default Cart;
