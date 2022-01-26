@@ -64,6 +64,8 @@
 .cartBgImg {
   height: 80vh;
   width: auto;
+  background-repeat: repeat;
+
 }
 
 .landingPageImg {
