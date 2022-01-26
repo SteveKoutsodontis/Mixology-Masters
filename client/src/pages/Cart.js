@@ -15,13 +15,14 @@ export const Cart = () => {
   return(
     <div className= "backgroundImg cartBgImg">
 <div className= "row">
+<Card.Header className= "center"><h1>Cart</h1></Card.Header>
     <div className="col-9 cartItemsContainer">
     <Card className="cartItem">
         {/* <Card.Img variant="top" src={props.image} /> */}
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
           <Card.Text>Card text</Card.Text>
-          <Button variant="primary">remove from cart</Button>
+          <Button variant="danger">remove from cart</Button>
         </Card.Body>
       </Card>
       <Card className="cartItem" >
@@ -29,7 +30,7 @@ export const Cart = () => {
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
           <Card.Text>Card text</Card.Text>
-          <Button variant="primary">remove from cart</Button>
+          <Button variant="danger">remove from cart</Button>
         </Card.Body>
       </Card> 
       <Card className="cartItem">
@@ -37,7 +38,7 @@ export const Cart = () => {
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
           <Card.Text>Card text</Card.Text>
-          <Button variant="primary">remove from cart</Button>
+          <Button variant="danger">remove from cart</Button>
         </Card.Body>
       </Card> 
       <Card className="cartItem">
@@ -45,7 +46,7 @@ export const Cart = () => {
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
           <Card.Text>Card text</Card.Text>
-          <Button variant="primary">remove from cart</Button>
+          <Button variant="danger">remove from cart</Button>
         </Card.Body>
       </Card> 
       <Card className="cartItem">
@@ -53,7 +54,7 @@ export const Cart = () => {
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
           <Card.Text>Card text</Card.Text>
-          <Button variant="primary">remove from cart</Button>
+          <Button variant="danger">remove from cart</Button>
         </Card.Body>
       </Card>
       <Card className="cartItem">
@@ -61,7 +62,7 @@ export const Cart = () => {
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
           <Card.Text>Card text</Card.Text>
-          <Button variant="primary">remove from cart</Button>
+          <Button variant="danger">remove from cart</Button>
         </Card.Body>
       </Card> 
       <Card className="cartItem">
@@ -69,7 +70,7 @@ export const Cart = () => {
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
           <Card.Text>Card text</Card.Text>
-          <Button variant="primary">remove from cart</Button>
+          <Button variant="danger">remove from cart</Button>
         </Card.Body>
       </Card> 
       <Card className="cartItem">
@@ -77,14 +78,14 @@ export const Cart = () => {
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
           <Card.Text>Card text</Card.Text>
-          <Button variant="primary" size="sm">remove from cart</Button>
+          <Button variant="danger" size="sm">remove from cart</Button>
         </Card.Body>
       </Card>
     </div>
 
     <div className="col-3">
+  <Card.Header className= "center"><h1>Cart Total</h1></Card.Header>
       <div>
-      <h2>Cart Subtotal</h2>
       <p>Cart Item</p>
       <p>Cart Item</p>
       <p>Cart Item</p>
@@ -92,7 +93,7 @@ export const Cart = () => {
       <Button variant="primary">Submit Order</Button>
       </div>
     </div>
-
+<Card.Footer className="center"><h1>Drink Responsibly!!!</h1></Card.Footer>
   </div>
   </div>
 
