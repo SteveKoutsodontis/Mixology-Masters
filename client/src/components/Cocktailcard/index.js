@@ -9,26 +9,18 @@ import { ADD_CART_ITEM } from "../../utils/mutations";
 import { useMutation, useQuery } from "@apollo/client";
 
 export function Cocktailcard(props) {
-  // We can get the product_id from props to create the CartItem
-// console.log ("props ", {props})
-  //
-  //??Can we use props as the product?
   const [addCartItem, { error }] = useMutation(ADD_CART_ITEM);
-if (error) {
-  console.log("err", error);
-}
-  const addToCart = async() => {
-    // ???await?
+
+  const addToCart = async (event) => {
+    event.preventDefault();
 
     try {
-      console.log ("try,addToCart called");
-      console.log (props._id);
-      // const {cartItem} = await addCartItem({variables: props._id});
-      const {cartItem} = await addCartItem({variables: "61f042351c0f430abc6e3da7"});
+      const cartItem = await addCartItem({
+        variables: { product: props._id, quantity: 1 },
+      });
       console.log("cItem", cartItem);
-    }
-    catch(err){
-    console.log(err);
+    } catch (err) {
+      console.log(err);
     }
   };
 

@@ -96,17 +96,14 @@ const resolvers = {
     // },
       addCartItem: async (parent, args, context) => {
 
-      // console.log(context);
 
-      // if (context.user) {
-        console.log("args.product " ,args.product);
+      if (context.user) {
+
         const cartItem = await CartItem.create(args);
-        console.log("in addCartItem1 ", {cartItem});
-        // await User.findByIdAndUpdate(context.user._id, { $push: { cartItems: cartItem } });
-       await User.findByIdAndUpdate("61f06db96f46c20e2c8ae85c", { $push: { cartItems: cartItem } });
-console.log("in addCartItem2 ", {cartItem});
+        await User.findByIdAndUpdate(context.user._id, { $push: { cartItems: cartItem } });
+
         return cartItem;
-      // }
+       }
 
       throw new AuthenticationError('Not logged in');
     },
