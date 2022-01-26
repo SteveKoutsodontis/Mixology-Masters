@@ -184,15 +184,15 @@ db.once('open', async () => {
       description: "The Cosmopolitan gained significant popularity in the 1990s partly due to the fact that Sarah Jessica Parkers character, Carrie Bradshaw, in the hit televsion programme, Sex in the City, often ordered the drink.",
       quantity: 500
   },
-  {
-      category: categories[2]._id,
-      name: "French Martini",
-      image: "https://www.thecocktaildb.com/images/media/drink/clth721504373134.jpg",
-      ingredients: [" Vodka, Chambord, Pineapple Juice, Raspberries for Garnish"],
-      price: 15.99,
-      description: "The part that makes this a French martini is the Chambord raspberry liqueur.",
-      quantity: 500
-  },
+//   {
+//       category: categories[2]._id,
+//       name: "French Martini",
+//       image: "https://www.thecocktaildb.com/images/media/drink/clth721504373134.jpg",
+//       ingredients: [" Vodka, Chambord, Pineapple Juice, Raspberries for Garnish"],
+//       price: 15.99,
+//       description: "The part that makes this a French martini is the Chambord raspberry liqueur.",
+//       quantity: 500
+//   },
   {
       category: categories[2]._id,
       name: "Espresso Maritni",
