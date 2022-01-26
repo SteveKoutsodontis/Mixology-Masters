@@ -31,7 +31,7 @@ const resolvers = {
           path: 'cartItems.products',
           populate: 'category'
         });
-
+console.log("User",{user})
         return user;
       }
 
