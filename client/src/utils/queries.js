@@ -51,7 +51,13 @@ const QUERY_USER = gql`
     user {
       firstName
       lastName
-
+      cartItems {
+        _id
+        product {
+          name
+          price
+        }
+      }
       orders {
         _id
         purchaseDate
