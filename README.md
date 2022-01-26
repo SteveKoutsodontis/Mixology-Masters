@@ -12,7 +12,9 @@
   - [Badges](#badges)
 
   ## Description
+  Mixology Masters is the perfect way to get your drink on with friends and family for any occasion! Simply sign up on our website and order the cocktail of your dreams! We also have fun facts about each of our cocktails so be sure to read those as well. At the end, check out and we'll have your drink ready for you in just a few days!
 
+  This is a MERN app built through GraphQL, Express, React and Node. 
   
   ## Installation
   Install Visual Studio Code and Node.js to make use of this application React-Bootstrap and Bootstrap.
@@ -25,6 +27,7 @@
   - Node.js
   - React
   - React-Bootstrap
+  - GraphQL
 
   ## Preview
   ![Img](MixMastersH.png)
