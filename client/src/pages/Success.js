@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { useMutation } from '@apollo/client';
-import Jumbotron from '../components/Jumbotron';
-// import { ADD_ORDER } from '../utils/mutations';
+import Jumbotron from './SuccessPage';
+import { ADD_ORDER } from '../utils/mutations';
 // import { idbPromise } from '../utils/helpers';
 
-// function Success() {
-//   const [addOrder] = useMutation(ADD_ORDER);
+function Success() {
+  const [addOrder] = useMutation(ADD_ORDER);
 
   useEffect(() => {
     async function saveOrder() {
@@ -22,7 +22,7 @@ import Jumbotron from '../components/Jumbotron';
       }
 
       setTimeout(() => {
-        window.location.assign('/');
+        window.location.assign('/Home');
       }, 3000);
     }
 
