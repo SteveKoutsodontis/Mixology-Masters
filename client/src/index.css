@@ -242,7 +242,7 @@ input:focus {
 .backgroundWhite {
   background: rgba(89, 142, 228, 0.466);
   margin: 0 40%;
-  padding-left: 140px ;
+  padding: 1% ;
 }
 
 .cartItemsContainer {
