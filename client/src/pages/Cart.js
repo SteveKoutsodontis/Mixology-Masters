@@ -12,6 +12,7 @@ export const Cart = () => {
 
   function renderCards() {
     let itemsOfCart = []
+<<<<<<< HEAD
     for (let item of cartItems) {
       itemsOfCart.push(
         <>
@@ -25,6 +26,19 @@ export const Cart = () => {
           </Card>
         </>
       )
+=======
+    for(let item of cartItems){
+       itemsOfCart.push (
+        <Card className="cartItem" key={item.name}>
+          <Card.Img variant="top" src={item.image} />
+          <Card.Body>
+            <Card.Title>{item.name}</Card.Title>
+            <Card.Text>{"$" + item.price}</Card.Text>
+            <Button variant="danger">Remove from cart</Button>
+          </Card.Body>
+        </Card>
+       )
+>>>>>>> 54d8fc0589511b535a1a0bdda204c796257a2365
     };
     return itemsOfCart
   }
@@ -33,6 +47,7 @@ export const Cart = () => {
 
   function renderList() {
     let listItems = []
+<<<<<<< HEAD
     for (let item of cartItems) {
       total += item.price
       listItems.push(
@@ -44,6 +59,19 @@ export const Cart = () => {
       )
     };
     total = parseFloat(total).toFixed(2)
+=======
+    for(let item of cartItems){
+      total+= item.price
+      listItems.push (
+        <div key={item.name}>
+       <h3>{item.name}</h3>
+       <p>{"$" + item.price}</p>
+       <hr></hr>
+        </div>
+       )
+      };
+  total = parseFloat(total).toFixed(2)
+>>>>>>> 54d8fc0589511b535a1a0bdda204c796257a2365
     return listItems
   }
 
