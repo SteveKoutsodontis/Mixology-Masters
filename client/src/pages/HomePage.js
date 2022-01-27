@@ -13,7 +13,7 @@ export const Home = () => {
   const cocktails = data?.products || [];
 
   return (
-    <div className="homePage text-center backgroundImg">
+    <div className=" text-center backgroundImg">
       <h2>
         Select the cocktails you will be learning to create with your personal
         Master Mixologist!

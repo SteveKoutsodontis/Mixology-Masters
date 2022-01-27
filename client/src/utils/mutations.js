@@ -11,6 +11,14 @@ export const LOGIN = gql`
   }
 `;
 
+// export const REMOVE_CART_ITEM = gql`
+// mutation removeCartItem($product: ID!) {
+//   removeCartItem(product: $product) {
+//      _id
+//    }
+// }
+// `;
+
 export const ADD_CART_ITEM = gql`
 mutation addCartItem($product: ID!) {
   addCartItem(product: $product) {
