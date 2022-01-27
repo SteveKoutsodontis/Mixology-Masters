@@ -44,6 +44,7 @@
 .backgroundImg {
   background-image: url("./pages/images/MM_Bg2.png");
   background-repeat: repeat;
+ min-height: 80vh;
 }
 
 /* .backgroundImg cartBgImg{
@@ -51,6 +52,9 @@
   background-repeat: repeat;
 } */
 
+.successPage {
+  height: 80vh;
+}
 
 
 .landingPageBtnContainer {
@@ -85,9 +89,8 @@
 
 
 .cartBgImg {
-  height: 80vh;
+  height: auto;
   width: auto;
-  background-repeat: repeat;
 
 }
 

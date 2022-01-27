@@ -19,7 +19,7 @@ export const Cart = () => {
           <Card.Body>
             <Card.Title>{item.name}</Card.Title>
             <Card.Text>{"$" + item.price}</Card.Text>
-            <Button variant="danger">Remove from cart</Button>
+            <Button variant="danger"disabled>Remove from cart</Button>
           </Card.Body>
         </Card>
        )
@@ -47,8 +47,8 @@ export const Cart = () => {
 
 
   return (
-    <div className="cartBgImg">
-      <div className="row backgroundImg">
+    <div className="cartBgImg backgroundImg">
+      <div className="row">
         <Card.Header className="center">
           <h1>Cart</h1>
         </Card.Header>
