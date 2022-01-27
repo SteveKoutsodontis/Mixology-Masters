@@ -1,15 +1,31 @@
-import React from "react";
+import React, {useEffect } from "react";
+import { EMPTY_CART } from "../utils/mutations";
 // import Jumbotron from 'react-bootstrap/Jumbotron'
-import { useEffect } from "react";
+import { useMutation} from "@apollo/client";
 // import { Redirect } from 'react-router-dom';
 {/* <Button><Link to="/Success">Checkout</Link></Button> */}
+
+
+
+
 function SuccessPage() {
+
+  // Remove all items from user's cart
+  const [emptyCart, { error }] = useMutation(EMPTY_CART);
+
+ 
+
   // const redirect = () => {
     useEffect(() => {
+      async function  emptyTheCart(){
+        await emptyCart();
+      }
+      emptyTheCart();
+      console.log("emptied cart");
       setTimeout(() => {
         window.location.assign('/Home');
-      }, 3000)
-    })
+      }, 50000)
+    }, [])
   // }
   // redirect()
   return (

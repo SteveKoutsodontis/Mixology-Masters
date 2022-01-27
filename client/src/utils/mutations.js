@@ -27,6 +27,14 @@ mutation addCartItem($product: ID!) {
 }
 `;
 
+export const EMPTY_CART = gql`
+mutation emptyCart{
+  emptyCart{
+   _id
+ }
+}
+`;
+
 export const ADD_ORDER = gql`
   mutation addOrder($products: [ID]!) {
     addOrder(products: $products) {
