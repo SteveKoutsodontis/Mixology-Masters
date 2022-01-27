@@ -29,7 +29,7 @@ function SuccessPage() {
   // }
   // redirect()
   return (
-    <div  className="backgroundImg cartBgImg">
+    <div  className="backgroundImg successPage">
       
         <h1 className="success">Success!</h1>
         <p className="funFont text-center">

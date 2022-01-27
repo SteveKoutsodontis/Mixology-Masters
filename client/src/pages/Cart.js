@@ -5,22 +5,7 @@ import { useQuery } from "@apollo/client";
 import { Link } from "react-router-dom";
 
 export const Cart = () => {
-//   const [removeCartItem, { error }] = useMutation(REMOVE_CART_ITEM);
-
-//   const removefromCart = async (event) => {
-//     event.preventDefault();
-// console.log ({props});
-//     try {
-//       const cartItem = await removeCartItem({
-//         variables: { product: props._id},
-//       });
-//       alert(`${props.name} removed from cart!`);
-//     } catch (err) {
-//       console.log(err);
-//     }
-//   };
-
-  
+ 
   const { loading, data } = useQuery(QUERY_USER);
 
   const cartItems = data?.user.cartItems;
@@ -34,7 +19,7 @@ export const Cart = () => {
           <Card.Body>
             <Card.Title>{item.name}</Card.Title>
             <Card.Text>{"$" + item.price}</Card.Text>
-            <Button variant="danger">Remove from cart</Button>
+            <Button variant="danger"disabled>Remove from cart</Button>
           </Card.Body>
         </Card>
        )
@@ -42,7 +27,7 @@ export const Cart = () => {
     return itemsOfCart
   }
 
-  let total=0;
+  let total = 0;
 
   function renderList() {
     let listItems = []
@@ -62,32 +47,28 @@ export const Cart = () => {
 
 
   return (
-    <div className="cartBgImg">
-      <div className="row backgroundImg">
+    <div className="cartBgImg backgroundImg">
+      <div className="row">
         <Card.Header className="center">
           <h1>Cart</h1>
         </Card.Header>
         <div className="col-9 cartItemsContainer">
-          {!loading ? renderCards(): <h2>Loading.....</h2>}
+          {!loading ? renderCards() : <h2>Loading.....</h2>}
         </div>
 
         <div className="col-3 cartList ">
           <div>
-          <div>
-          {!loading ? renderList(): <h2>Loading.....</h2>}
-          
-          </div>
-          <Card.Header className="center">
-            <h3>Total: {total}</h3>
-            <Link to="/Success"><Button> Checkout</Button></Link>
-          </Card.Header>
+            <div>
+              {!loading ? renderList() : <h2>Loading.....</h2>}
+
+            </div>
+            <Card.Header className="center">
+              <h3>Total: {total}</h3>
+              <Link to="/Success"><Button> Checkout</Button></Link>
+            </Card.Header>
           </div>
         </div>
-        {/* <Card.Footer className="center">
-          <h1>Drink Responsibly!!!</h1>
-        </Card.Footer> */}
       </div>
-      <Footer />
     </div>
   );
 };
