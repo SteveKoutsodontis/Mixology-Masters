@@ -14,8 +14,7 @@ export const Cart = () => {
     let itemsOfCart = []
     for(let item of cartItems){
        itemsOfCart.push (
-       <>
-        <Card className="cartItem">
+        <Card className="cartItem" key={item.name}>
           <Card.Img variant="top" src={item.image} />
           <Card.Body>
             <Card.Title>{item.name}</Card.Title>
@@ -23,7 +22,6 @@ export const Cart = () => {
             <Button variant="danger">Remove from cart</Button>
           </Card.Body>
         </Card>
-        </>
        )
     };
     return itemsOfCart
@@ -36,11 +34,11 @@ export const Cart = () => {
     for(let item of cartItems){
       total+= item.price
       listItems.push (
-        <>
+        <div key={item.name}>
        <h3>{item.name}</h3>
        <p>{"$" + item.price}</p>
        <hr></hr>
-        </>
+        </div>
        )
       };
   total = parseFloat(total).toFixed(2)

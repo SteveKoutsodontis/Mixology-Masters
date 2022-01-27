@@ -61,6 +61,11 @@
   font-size: 1000000px;
 }
 
+.landpageBtn > a {
+  color: white ;
+  text-decoration: none ;
+}
+
 .cartList {
   background-color: #fafafa ;
 }
